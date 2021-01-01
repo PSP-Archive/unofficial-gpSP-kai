@@ -1,0 +1,2 @@
+bmp2bdf version 0.2
+Usage: bmp2bdf [numberOfColumns] input.bdf input.bmp output.bdf

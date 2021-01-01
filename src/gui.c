@@ -89,15 +89,16 @@ game_config_t g_game_config;
 #define ANALOG_CONFIG_OPTION(display_string, number)                          \
 {                                                                             \
   NULL,                                                                       \
-  menu_fix_gamepad_help,                                                      \
+  menu_fix_analog_help,                                                       \
   NULL,                                                                       \
   display_string,                                                             \
   gamepad_config_buttons,                                                     \
-  gamepad_config_map + number + 12,                                           \
+  gamepad_config_map + analog_config_line_to_button[number],                  \
   sizeof(gamepad_config_buttons) / sizeof(gamepad_config_buttons[0]),         \
-  gamepad_help[gamepad_config_map[number + 12]],                              \
-  number + 2,                                                                 \
-  STRING_SELECTION_TYPE                                                     \
+  gamepad_help[gamepad_config_map[                                            \
+   analog_config_line_to_button[number]]],                                    \
+  number,                                                                     \
+  STRING_SELECTION_TYPE                                                       \
 }                                                                             \
 
 #define CHEAT_OPTION(number)                                                  \
@@ -107,11 +108,11 @@ game_config_t g_game_config;
   NULL,                                                                       \
   cheat_format_str[number],                                                   \
   enable_disable_options,                                                     \
-  &(g_game_config.cheats_flag[number].cheat_active),                                 \
+  &(g_game_config.cheats_flag[number].cheat_active),                          \
   2,                                                                          \
   msg[MSG_CHEAT_MENU_HELP_0],                                                 \
   (number) % 10,                                                              \
-  STRING_SELECTION_TYPE                                                     \
+  STRING_SELECTION_TYPE                                                       \
 }                                                                             \
 
 #define ACTION_OPTION(action_function, passive_function, display_string,      \
@@ -126,7 +127,7 @@ game_config_t g_game_config;
   0,                                                                          \
   help_string,                                                                \
   line_number,                                                                \
-  ACTION_TYPE                                                               \
+  ACTION_TYPE                                                                 \
 }                                                                             \
 
 #define SUBMENU_OPTION(sub_menu, display_string, help_string, line_number)    \
@@ -140,7 +141,7 @@ game_config_t g_game_config;
   sizeof(sub_menu) / sizeof(MENU_OPTION_TYPE),                                \
   help_string,                                                                \
   line_number,                                                                \
-  SUBMENU_TYPE                                                              \
+  SUBMENU_TYPE                                                                \
 }                                                                             \
 
 #define SELECTION_OPTION(passive_function, display_string, options,           \
@@ -171,37 +172,37 @@ game_config_t g_game_config;
   num_options,                                                                \
   help_string,                                                                \
   line_number,                                                                \
-  type | ACTION_TYPE                                                        \
+  type | ACTION_TYPE                                                          \
 }                                                                             \
 
 #define STRING_SELECTION_OPTION(passive_function, display_string, options,    \
  option_ptr, num_options, help_string, line_number)                           \
   SELECTION_OPTION(passive_function, display_string, options,                 \
-   option_ptr, num_options, help_string, line_number, STRING_SELECTION_TYPE)\
+   option_ptr, num_options, help_string, line_number, STRING_SELECTION_TYPE)  \
 
 #define NUMERIC_SELECTION_OPTION(passive_function, display_string,            \
  option_ptr, num_options, help_string, line_number)                           \
   SELECTION_OPTION(passive_function, display_string, NULL, option_ptr,        \
-   num_options, help_string, line_number, NUMBER_SELECTION_TYPE)            \
+   num_options, help_string, line_number, NUMBER_SELECTION_TYPE)              \
 
 #define STRING_SELECTION_ACTION_OPTION(action_function, passive_function,     \
  display_string, options, option_ptr, num_options, help_string, line_number)  \
   ACTION_SELECTION_OPTION(action_function, passive_function,                  \
    display_string,  options, option_ptr, num_options, help_string,            \
-   line_number, STRING_SELECTION_TYPE)                                      \
+   line_number, STRING_SELECTION_TYPE)                                        \
 
 #define NUMERIC_SELECTION_ACTION_OPTION(action_function, passive_function,    \
  display_string, option_ptr, num_options, help_string, line_number)           \
   ACTION_SELECTION_OPTION(action_function, passive_function,                  \
    display_string,  NULL, option_ptr, num_options, help_string,               \
-   line_number, NUMBER_SELECTION_TYPE)                                      \
+   line_number, NUMBER_SELECTION_TYPE)                                        \
 
-#define NUMERIC_SELECTION_HIDE_OPTION(action_function,                 \
+#define NUMERIC_SELECTION_HIDE_OPTION(action_function,                        \
  passive_function, display_string, option_ptr, num_options, help_string,      \
  line_number)                                                                 \
   ACTION_SELECTION_OPTION(action_function, passive_function,                  \
    display_string, NULL, option_ptr, num_options, help_string,                \
-   line_number, NUMBER_SELECTION_TYPE)                                      \
+   line_number, NUMBER_SELECTION_TYPE)                                        \
 
 typedef enum
 {
@@ -265,6 +266,7 @@ static char m_font[MAX_PATH];
 static char s_font[MAX_PATH];
 static u32 menu_cheat_page = 0;
 static u32 gamepad_config_line_to_button[] = { 8, 6, 7, 9, 1, 2, 3, 0, 4, 5, 11, 10 };
+static u32 analog_config_line_to_button[] = { 8, 6, 7, 9 };
 
 /******************************************************************************
  * ローカル関数の宣言
@@ -671,7 +673,7 @@ s32 load_file(char **wildcards, char *result,char *default_dir_name)
           break;
       }
       print_status(1);
-      PRINT_STRING_BG_SJIS(utf8, current_dir_short, COLOR_ACTIVE_ITEM, COLOR_BG, 0, (CURRENT_DIR_ROWS * 10));
+      PRINT_STRING_BG_SJIS(utf8, current_dir_short, COLOR_ROM_INFO, COLOR_BG, 0, (CURRENT_DIR_ROWS * 10));
       PRINT_STRING_BG(msg[MSG_RETURN_MENU], COLOR_HELP_TEXT, COLOR_BG, 20, 260);
 
       for(i = 0, current_file_number = i + current_file_scroll_value;
@@ -786,13 +788,13 @@ void init_game_config()
 void init_gpsp_config()
 {
   int temp;
-  g_gpsp_config.screen_mode = scaled_aspect;
+  g_gpsp_config.screen_mode = fullscreen;
   g_gpsp_config.screen_scale = 100;
   g_gpsp_config.screen_filter = filter_bilinear;
   g_gpsp_config.screen_ratio = R4_3;
   g_gpsp_config.screen_interlace = PROGRESSIVE;
   g_gpsp_config.enable_audio = YES;
-  g_gpsp_config.enable_analog = YES;
+  g_gpsp_config.enable_analog = NO;
   g_gpsp_config.analog_sensitivity_level = 4;
   g_gpsp_config.enable_home = NO;
   memcpy(g_gpsp_config.gamepad_config_map, gamepad_config_map_init, sizeof(gamepad_config_map_init));
@@ -925,6 +927,7 @@ u32 menu(u16 *original_screen)
   auto void menu_load_state_file();
   auto void menu_load_cheat_file();
   auto void menu_fix_gamepad_help();
+  auto void menu_fix_analog_help();
   auto void submenu_graphics_sound();
   auto void submenu_cheats();
   auto void submenu_misc();
@@ -1118,6 +1121,12 @@ u32 menu(u16 *original_screen)
      gamepad_help[gamepad_config_map[gamepad_config_line_to_button[current_option_num]]];
   }
 
+  void menu_fix_analog_help()
+  {
+    current_option->help_string =
+     gamepad_help[gamepad_config_map[analog_config_line_to_button[current_option_num]]];
+  }
+
   void submenu_graphics_sound()
   {
 
@@ -1165,7 +1174,7 @@ u32 menu(u16 *original_screen)
 
   void submenu_savestate()
   {
-    PRINT_STRING_BG(msg[MSG_STATE_MENU_TITLE], COLOR_ACTIVE_ITEM, COLOR_BG, 10, 70);
+    PRINT_STRING_BG(msg[MSG_STATE_MENU_TITLE], COLOR_HELP_TEXT, COLOR_BG, 10, 70);
     menu_change_state();
   }
 
@@ -1235,7 +1244,7 @@ u32 menu(u16 *original_screen)
     msg[MSG_PAD_MENU_CFG_18],
     msg[MSG_PAD_MENU_CFG_19],
     msg[MSG_PAD_MENU_CFG_20],
-    msg[MSG_PAD_MENU_CFG_21],
+    msg[MSG_PAD_MENU_CFG_21]
   };
 
   char *ratio_options[] = { msg[MSG_R_4_3], msg[MSG_R_16_9] };
@@ -1280,18 +1289,18 @@ u32 menu(u16 *original_screen)
     /* 00 */ STRING_SELECTION_OPTION(NULL, msg[MSG_SCALE], scale_options, &g_gpsp_config.screen_mode, 5, msg[MSG_G_S_MENU_HELP_0], 0),
     /* 01 */ STRING_SELECTION_OPTION(NULL, msg[MSG_FILTER], yes_no_options, &g_gpsp_config.screen_filter, 2, msg[MSG_G_S_MENU_HELP_1], 1),
     /* 02 */ STRING_SELECTION_OPTION(NULL, msg[MSG_RATIO], ratio_options, &g_gpsp_config.screen_ratio, 2, msg[MSG_G_S_MENU_HELP_9], 2),
-    /* 03 */ STRING_SELECTION_OPTION(NULL, msg[MSG_INTERLACE], interlace_options, &g_gpsp_config.screen_interlace, 2, msg[MSG_G_S_MENU_HELP_10], 3),
+    /* 03 */ STRING_SELECTION_OPTION(NULL, msg[MSG_INTERLACE], interlace_options, &g_gpsp_config.screen_interlace, 2, msg[MSG_G_S_MENU_HELP_11], 3),
     /* 04 */
     /* 05 */ STRING_SELECTION_OPTION(NULL, msg[MSG_SKIP_TYPE], frameskip_options, &g_game_config.frameskip_type, 3, msg[MSG_G_S_MENU_HELP_2], 5),
     /* 06 */ NUMERIC_SELECTION_OPTION(NULL, msg[MSG_SKIP_VALUE], &g_game_config.frameskip_value, 100, msg[MSG_G_S_MENU_HELP_3], 6),
     /* 07 */ STRING_SELECTION_OPTION(NULL, msg[MSG_SKIP_RANDOM], frameskip_variation_options, &g_game_config.random_skip, 2, msg[MSG_G_S_MENU_HELP_4], 7),
     /* 08 */
     /* 09 */ STRING_SELECTION_OPTION(NULL, msg[MSG_AUDIO_ENABLE], yes_no_options, &g_gpsp_config.enable_audio, 2, msg[MSG_G_S_MENU_HELP_5], 9),
-    /* 10 */ STRING_SELECTION_OPTION(NULL, msg[MSG_AUDIO_BUFFER], audio_buffer_options, &g_game_config.audio_buffer_size_number, 11, msg[MSG_G_S_MENU_HELP_6], 11),
+    /* 10 */ STRING_SELECTION_OPTION(NULL, msg[MSG_AUDIO_BUFFER], audio_buffer_options, &g_game_config.audio_buffer_size_number, 11, msg[MSG_G_S_MENU_HELP_6], 10),
     /* 11 */
     /* 12 */ ACTION_OPTION(menu_save_ss, NULL, msg[MSG_SCREEN_SHOT], msg[MSG_G_S_MENU_HELP_7], 12),
     /* 13 */
-    /* 14 */NUMERIC_SELECTION_OPTION(NULL, "scale %d", &g_gpsp_config.screen_scale, 201, "scale", 14),
+    /* 14 */NUMERIC_SELECTION_OPTION(NULL, msg[MSG_DISPLAY_SCALE], &g_gpsp_config.screen_scale, 201, msg[MSG_G_S_MENU_HELP_10], 14),
     /* 15 */
     /* 16 */ SUBMENU_OPTION(NULL, msg[MSG_MENU_RETURN_MAIN], msg[MSG_G_S_MENU_HELP_8], 16)
   };
@@ -1313,10 +1322,10 @@ u32 menu(u16 *original_screen)
     /* 07 */ CHEAT_OPTION((10 * menu_cheat_page) + 7),
     /* 08 */ CHEAT_OPTION((10 * menu_cheat_page) + 8),
     /* 09 */ CHEAT_OPTION((10 * menu_cheat_page) + 9),
-    /* 10 */ NUMERIC_SELECTION_OPTION(reload_cheats_page, msg[MSG_CHEAT_MENU_5], &menu_cheat_page, MAX_CHEATS_PAGE, msg[MSG_CHEAT_MENU_HELP_5], 10),
-    /* 11 */ ACTION_OPTION(menu_load_cheat_file, NULL, msg[MSG_CHEAT_MENU_1], msg[MSG_CHEAT_MENU_HELP_1], 11),
+    /* 10 */
+    /* 11 */ NUMERIC_SELECTION_OPTION(reload_cheats_page, msg[MSG_CHEAT_MENU_5], &menu_cheat_page, MAX_CHEATS_PAGE, msg[MSG_CHEAT_MENU_HELP_5], 11),
     /* 12 */
-    /* 13 */
+    /* 13 */ ACTION_OPTION(menu_load_cheat_file, NULL, msg[MSG_CHEAT_MENU_1], msg[MSG_CHEAT_MENU_HELP_1], 13),
     /* 14 */
     /* 15 */
     /* 16 */ SUBMENU_OPTION(NULL, msg[MSG_CHEAT_MENU_4], msg[MSG_CHEAT_MENU_HELP_4], 16)
@@ -1333,19 +1342,21 @@ u32 menu(u16 *original_screen)
     STRING_SELECTION_OPTION(NULL, msg[MSG_CHEAT_MENU_3], update_backup_options, &g_game_config.update_backup_flag, 2, msg[MSG_CHEAT_MENU_HELP_3], 1),
     STRING_SELECTION_OPTION(home_mode, msg[MSG_CHEAT_MENU_6], yes_no_options, &g_gpsp_config.enable_home, 2, msg[MSG_CHEAT_MENU_HELP_6], 2),
 
+    STRING_SELECTION_OPTION(NULL, msg[MSG_MISC_MENU_2], language_options, &g_gpsp_config.language, 12, msg[MSG_MISC_MENU_HELP_2], 4), /* TODO */
+
+    STRING_SELECTION_OPTION(NULL, msg[MSG_MISC_MENU_3], yes_no_options, &g_gpsp_config.fake_fat, 2, msg[MSG_MISC_MENU_HELP_3], 6), /* TODO */
+    STRING_SELECTION_OPTION(NULL, msg[MSG_MISC_MENU_4], boot_mode_options, &g_gpsp_config.boot_mode, 2, msg[MSG_MISC_MENU_HELP_4], 7), /* TODO */
+
 #ifdef USE_C_CORE
-    STRING_SELECTION_OPTION(NULL, "Emulate Core : %s", emulate_core_options, &g_gpsp_config.emulate_core , 2, "Emulate Core", 3),
+    STRING_SELECTION_OPTION(NULL, msg[MSG_MISC_MENU_0], emulate_core_options, &g_gpsp_config.emulate_core , 2, msg[MSG_MISC_MENU_HELP_0], 9),
 #endif
 
 #ifdef USE_DEBUG
-    STRING_SELECTION_OPTION(NULL, "Debug mode : %s", yes_no_options, &g_gpsp_config.debug_flag, 2, "Debug mode", 4),
+    STRING_SELECTION_OPTION(NULL, msg[MSG_MISC_MENU_1], yes_no_options, &g_gpsp_config.debug_flag, 2, msg[MSG_MISC_MENU_HELP_1], 10),
 #endif
 
-    STRING_SELECTION_OPTION(NULL, "言語 : %s", language_options, &g_gpsp_config.language, 12, "言語", 5), /* TODO */
-    STRING_SELECTION_OPTION(NULL, "Fake Fat : %s", yes_no_options, &g_gpsp_config.fake_fat, 2, "Fake Fat", 6), /* TODO */
-    STRING_SELECTION_OPTION(NULL, "Boot Mode : %s", boot_mode_options, &g_gpsp_config.boot_mode, 2, "Boot Mode", 8), /* TODO */
 #if 0
-    NUMERIC_SELECTION_OPTION(NULL, "周囲の明るさ : %d", &g_gpsp_config.solar_level, 25, "周囲の明るさ", 8), /* TODO */
+    NUMERIC_SELECTION_OPTION(NULL, msg[MSG_MISC_MENU_5], &g_gpsp_config.solar_level, 25, msg[MSG_MISC_MENU_HELP_5], 11), /* TODO */
 #endif
     SUBMENU_OPTION(NULL, msg[MSG_CHEAT_MENU_4], msg[MSG_CHEAT_MENU_HELP_4], 16)
   };
@@ -1389,9 +1400,9 @@ u32 menu(u16 *original_screen)
     GAMEPAD_CONFIG_OPTION(msg[MSG_PAD_MENU_10], 10),
     GAMEPAD_CONFIG_OPTION(msg[MSG_PAD_MENU_11], 11),
 
-    STRING_SELECTION_OPTION(set_gamepad, msg[MSG_PAD_MENU_13], yes_no_options, &g_game_config.use_default_gamepad_map, 2, msg[MSG_PAD_MENU_HELP_13], 13),
+    STRING_SELECTION_OPTION(set_gamepad, msg[MSG_PAD_MENU_12], yes_no_options, &g_game_config.use_default_gamepad_map, 2, msg[MSG_PAD_MENU_HELP_12], 13),
 
-    SUBMENU_OPTION(NULL, msg[MSG_PAD_MENU_12], msg[MSG_PAD_MENU_HELP_12], 15)
+    SUBMENU_OPTION(NULL, msg[MSG_PAD_MENU_13], msg[MSG_PAD_MENU_HELP_13], 15)
   };
 
   MAKE_MENU(gamepad_config, submenu_gamepad, NULL);
@@ -1410,12 +1421,13 @@ u32 menu(u16 *original_screen)
 
     STRING_SELECTION_OPTION(NULL, msg[MSG_A_PAD_MENU_4], yes_no_options, &g_gpsp_config.enable_analog, 2, msg[MSG_A_PAD_MENU_HELP_0], 7),
     NUMERIC_SELECTION_OPTION(NULL, msg[MSG_A_PAD_MENU_5], &g_gpsp_config.analog_sensitivity_level, 10, msg[MSG_A_PAD_MENU_HELP_1], 8),
-    STRING_SELECTION_OPTION(NULL, "tilt sensor : %s", yes_no_options, &g_game_config.allocate_sensor, 2, "tilt sensor", 9), /* TODO */
-    STRING_SELECTION_OPTION(set_gamepad, msg[MSG_PAD_MENU_13], yes_no_options, &g_game_config.use_default_gamepad_map, 2, msg[MSG_PAD_MENU_HELP_13], 10),
+    STRING_SELECTION_OPTION(NULL, msg[MSG_A_PAD_MENU_6], yes_no_options, &g_game_config.allocate_sensor, 2, msg[MSG_A_PAD_MENU_HELP_2], 9), /* TODO */
+
+    STRING_SELECTION_OPTION(set_gamepad, msg[MSG_PAD_MENU_12], yes_no_options, &g_game_config.use_default_gamepad_map, 2, msg[MSG_PAD_MENU_HELP_12], 11),
 
 
 
-    SUBMENU_OPTION(NULL, msg[MSG_A_PAD_MENU_6], msg[MSG_A_PAD_MENU_HELP_2], 15)
+    SUBMENU_OPTION(NULL, msg[MSG_A_PAD_MENU_7], msg[MSG_A_PAD_MENU_HELP_3], 15)
   };
 
   MAKE_MENU(analog_config, submenu_analog, NULL);
@@ -1453,24 +1465,26 @@ u32 menu(u16 *original_screen)
   --------------------------------------------------------*/
   MENU_OPTION_TYPE main_options[] =
   {
-    SUBMENU_OPTION(&graphics_sound_menu, msg[MSG_MAIN_MENU_0], msg[MSG_MAIN_MENU_HELP_0], 0),                                         /*  0行目 */
+    ACTION_OPTION(menu_load, NULL, msg[MSG_MAIN_MENU_7], msg[MSG_MAIN_MENU_HELP_7], 0),                                              /* 11行目 */
+    ACTION_OPTION(menu_exit, NULL, msg[MSG_MAIN_MENU_9], msg[MSG_MAIN_MENU_HELP_9], 1),                                              /* 13行目 */
+    ACTION_OPTION(menu_restart, NULL, msg[MSG_MAIN_MENU_8], msg[MSG_MAIN_MENU_HELP_8], 2),                                           /* 12行目 */
 
-    NUMERIC_SELECTION_ACTION_OPTION(menu_load_state, NULL, msg[MSG_MAIN_MENU_1], &g_savestate_slot_num, 11, msg[MSG_MAIN_MENU_HELP_1], 2),  /*  2行目 */
-    NUMERIC_SELECTION_ACTION_OPTION(menu_save_state, NULL, msg[MSG_MAIN_MENU_2], &g_savestate_slot_num, 11, msg[MSG_MAIN_MENU_HELP_2], 3),  /*  3行目 */
-    SUBMENU_OPTION(&savestate_menu, msg[MSG_MAIN_MENU_3], msg[MSG_MAIN_MENU_HELP_3], 4),                                              /*  4行目 */
+    NUMERIC_SELECTION_ACTION_OPTION(menu_load_state, NULL, msg[MSG_MAIN_MENU_1], &g_savestate_slot_num, 11, msg[MSG_MAIN_MENU_HELP_1], 4),  /*  2行目 */
+    NUMERIC_SELECTION_ACTION_OPTION(menu_save_state, NULL, msg[MSG_MAIN_MENU_2], &g_savestate_slot_num, 11, msg[MSG_MAIN_MENU_HELP_2], 5),  /*  3行目 */
+    SUBMENU_OPTION(&savestate_menu, msg[MSG_MAIN_MENU_3], msg[MSG_MAIN_MENU_HELP_3], 6),                                              /*  4行目 */
 
-    SUBMENU_OPTION(&gamepad_config_menu, msg[MSG_MAIN_MENU_4], msg[MSG_MAIN_MENU_HELP_4], 6),                                         /*  6行目 */
-    SUBMENU_OPTION(&analog_config_menu, msg[MSG_MAIN_MENU_5], msg[MSG_MAIN_MENU_HELP_5], 7),                                          /*  7行目 */
+    SUBMENU_OPTION(&cheats_menu, msg[MSG_MAIN_MENU_6], msg[MSG_MAIN_MENU_HELP_6], 8),                                            /*  9行目 */
+
+    SUBMENU_OPTION(&gamepad_config_menu, msg[MSG_MAIN_MENU_4], msg[MSG_MAIN_MENU_HELP_4], 10),                                         /*  6行目 */
+    SUBMENU_OPTION(&analog_config_menu, msg[MSG_MAIN_MENU_5], msg[MSG_MAIN_MENU_HELP_5], 11),                                          /*  7行目 */
 #ifdef USE_ADHOC
-    SUBMENU_OPTION(&adhoc_menu, "adhoc", "adhoc", 8),                                                                                 /*  8行目 */
+    SUBMENU_OPTION(&adhoc_menu, "adhoc", "adhoc", 12),                                                                                 /*  8行目 */
 #endif
-    SUBMENU_OPTION(&cheats_menu, msg[MSG_MAIN_MENU_6], msg[MSG_MAIN_MENU_HELP_6], 9),                                            /*  9行目 */
-    SUBMENU_OPTION(&misc_menu, "misc", "misc", 10),                                                                                   /* 10行目 */
-    ACTION_OPTION(menu_load, NULL, msg[MSG_MAIN_MENU_7], msg[MSG_MAIN_MENU_HELP_7], 11),                                              /* 11行目 */
-    ACTION_OPTION(menu_restart, NULL, msg[MSG_MAIN_MENU_8], msg[MSG_MAIN_MENU_HELP_8], 12),                                           /* 12行目 */
-    ACTION_OPTION(menu_exit, NULL, msg[MSG_MAIN_MENU_9], msg[MSG_MAIN_MENU_HELP_9], 13),                                              /* 13行目 */
+    SUBMENU_OPTION(&graphics_sound_menu, msg[MSG_MAIN_MENU_0], msg[MSG_MAIN_MENU_HELP_0], 13),                                         /*  0行目 */
+    SUBMENU_OPTION(&misc_menu, msg[MSG_MAIN_MENU_11], msg[MSG_MAIN_MENU_HELP_11], 14),                                                                                   /* 10行目 */
 
-    ACTION_OPTION(menu_quit, NULL, msg[MSG_MAIN_MENU_10], msg[MSG_MAIN_MENU_HELP_10], 15)                                             /* 15行目 */
+
+    ACTION_OPTION(menu_quit, NULL, msg[MSG_MAIN_MENU_10], msg[MSG_MAIN_MENU_HELP_10], 16)                                             /* 15行目 */
   };
 
   MAKE_MENU(main, submenu_main, NULL);
@@ -1538,7 +1552,7 @@ u32 menu(u16 *original_screen)
   {
     first_load = 1;
     memset(original_screen, 0x00, 240 * 160 * 2);
-    PRINT_STRING_EXT_BG(msg[MSG_NON_LOAD_GAME], 0xFFFF, 0x0000, 60, 75, original_screen, 240);
+    PRINT_STRING_EXT_BG(msg[MSG_NON_LOAD_GAME], 0xFFFF, 0x0000, 0, 75, original_screen, 240);
   }
 
   choose_menu(&main_menu);
@@ -2093,7 +2107,7 @@ static void get_savestate_snapshot(char *savestate_filename, u32 slot_num)
     else
       {
         memset(snapshot_buffer, 0, 240 * 160 * 2);
-        PRINT_STRING_EXT_BG(msg[MSG_STATE_MENU_STATE_NONE], 0xFFFF, 0x0000, 15, 75, snapshot_buffer, 240);
+        PRINT_STRING_EXT_BG(msg[MSG_STATE_MENU_STATE_NONE], 0xFFFF, 0x0000, 0, 65, snapshot_buffer, 240);
         get_timestamp_string(savestate_timestamp_string, MSG_STATE_MENU_DATE_NONE_0, 0, 0, 0, 0, 0, 0, 0, 0);
         PRINT_STRING_BG(savestate_timestamp_string, COLOR_HELP_TEXT, COLOR_BG, 10, 40);
       }
@@ -2161,21 +2175,21 @@ static void print_status(u32 mode)
   get_timestamp_string(print_buffer_1, MSG_MENU_DATE_FMT_0, current_time.year, current_time.month , current_time.day, wday,
     current_time.hour, current_time.minutes, current_time.seconds, 0);
   sprintf(print_buffer_2,"%s%s", msg[MSG_MENU_DATE], print_buffer_1);
-  PRINT_STRING_BG(print_buffer_2, COLOR_HELP_TEXT, COLOR_BG, 0, 0);
+  PRINT_STRING_BG(print_buffer_2, COLOR_HELP_TEXT, COLOR_BG, 10, 0);
 
   sprintf(print_buffer_1, msg[MSG_MENU_BATTERY], scePowerGetBatteryLifePercent(), scePowerGetBatteryLifeTime());
-  PRINT_STRING_BG(print_buffer_1, COLOR_HELP_TEXT, COLOR_BG, 240, 0);
+  PRINT_STRING_BG(print_buffer_1, COLOR_HELP_TEXT, COLOR_BG, 229, 0);
 
-  sprintf(print_buffer_1, "MAX ROM BUF: %02d MB Ver:%d.%d %s %d Build %d",
+  sprintf(print_buffer_1, "MAX ROM BUF: %02d MB Ver: %d.%d %s %d Build %d",
       (int)(gamepak_ram_buffer_size/1024/1024), VERSION_MAJOR, VERSION_MINOR, VER_RELEASE, VERSION_BUILD, BUILD_COUNT);
-  PRINT_STRING_BG(print_buffer_1, COLOR_HELP_TEXT, COLOR_BG, 240, 10);
+  PRINT_STRING_BG(print_buffer_1, COLOR_HELP_TEXT, COLOR_BG, 229, 10);
 
   if (mode == 0)
   {
     strncpy(print_buffer_1, gamepak_filename, 80);
-    PRINT_STRING_BG_SJIS(utf8, print_buffer_1, COLOR_ROM_INFO, COLOR_BG, 10, 10);
+    PRINT_STRING_BG_SJIS(utf8, print_buffer_1, COLOR_ROM_INFO, COLOR_BG, 10, 20);
     sprintf(print_buffer_1, "%s  %s  %s  %0X", gamepak_title, gamepak_code, gamepak_maker, (unsigned int)gamepak_crc32);
-    PRINT_STRING_BG(print_buffer_1, COLOR_ROM_INFO, COLOR_BG, 10, 20);
+    PRINT_STRING_BG(print_buffer_1, COLOR_ROM_INFO, COLOR_BG, 10, 10);
   }
 }
 
@@ -2193,20 +2207,22 @@ static void get_timestamp_string(char *buffer, u16 msg_id, u16 year, u16 mon, u1
       sprintf(buffer, msg[msg_id    ], year, mon, day, weekday_strings[wday], hour, min, sec, msec / 1000);
       break;
     case PSP_SYSTEMPARAM_DATE_FORMAT_MMDDYYYY:
-      sprintf(buffer, msg[msg_id + 1], weekday_strings[wday], mon, day, year, hour, min, sec, msec / 1000);
+      sprintf(buffer, msg[msg_id + 1], mon, day, year, weekday_strings[wday], hour, min, sec, msec / 1000);
       break;
     case PSP_SYSTEMPARAM_DATE_FORMAT_DDMMYYYY:
-      sprintf(buffer, msg[msg_id + 2], weekday_strings[wday], day, mon, year, hour, min, sec, msec / 1000);
+      sprintf(buffer, msg[msg_id + 2], day, mon, year, weekday_strings[wday], hour, min, sec, msec / 1000);
       break;
   }
 }
 
 static void save_ss_bmp(u16 *image)
 {
-  static unsigned char header[] ={ 'B',  'M',  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x36, 0x00, 0x00, 0x00, 0x28, 0x00,
-                                   0x00, 0x00,  240, 0x00, 0x00, 0x00,  160, 0x00, 0x00, 0x00, 0x01, 0x00, 0x18, 0x00, 0x00, 0x00,
-                                   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                                   0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+  static unsigned char header[] = {
+      'B', 'M', 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x36, 0x00, 0x00, 0x00, 0x28, 0x00,
+      0x00, 0x00, 240, 0x00, 0x00, 0x00, 160, 0x00, 0x00, 0x00, 0x01, 0x00, 0x18, 0x00, 0x00, 0x00,
+      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+      0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	  };
 
   char ss_filename[MAX_FILE];
   char timestamp[MAX_FILE];
@@ -2221,7 +2237,7 @@ static void save_ss_bmp(u16 *image)
 
   change_ext(gamepak_filename, ss_filename, "_");
 
-  get_timestamp_string(timestamp, MSG_SS_FMT_0, current_time.year, current_time.month , current_time.day, 7,
+  get_timestamp_string(timestamp, MSG_SS_FMT_0, current_time.year, current_time.month, current_time.day, 7,
     current_time.hour, current_time.minutes, current_time.seconds, current_time.microseconds);
 
   if (g_default_ss_dir != NULL) {

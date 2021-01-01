@@ -146,5 +146,5 @@ endif
 all:
 	rm ./PARAM.SFO
 	rm ./gui.o
-	cp ./*.prx ../obj/
-	cp ./*.PBP ../obj/
+	cp ./*.prx ../obj
+	cp ./*.PBP ../obj

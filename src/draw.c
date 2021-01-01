@@ -196,7 +196,7 @@ u32 yesno_dialog(char *text)
 
   draw_dialog(yesno_sx - 8, yesno_sy -29, yesno_ex + 8, yesno_ey + 13);
   print_string_center(yesno_sy - 16, COLOR_YESNO_TEXT, COLOR_DIALOG, text);
-  print_string_center(yesno_sy + 5 , COLOR_YESNO_TEXT, COLOR_DIALOG, "Yes - O / No - X");
+  print_string_center(yesno_sy + 5 , COLOR_YESNO_TEXT, COLOR_DIALOG, msg[MSG_YES_NO]);
 
   flip_screen();
 

@@ -1,0 +1,99 @@
+/*
+ * bmp2bdf  --  enable to modify glyphs in a bdf font
+ * version: 0.2
+ * date:    Wed Feb 07 00:32:31 2001
+ * author:  ITOU Hiroki (itouh@lycos.ne.jp)
+ */
+
+
+SYNOPSIS
+        bmp2bdf [numberOfColumns] input.bdf input.bmp output.bdf
+
+        'numberOfColumns' can be omitted.  If omitted,
+        numberOfColumns becomes 32.
+
+
+DESCRIPTION
+        Working with the bdf2bmp utility (not this tool),  the
+        bmp2bdf utility (this tool) enables you to modify glyphs
+        in a BDF-font-file.
+
+        See EXAMPLES.
+
+EXAMPLES
+        1)  Prepare a BDF file.  Now,  'courR14.bdf' is
+            prepared.
+
+        2)  Use bdf2bmp to create BMP-image-file.
+                $ bdf2bmp courR14.bdf courR14.bmp
+
+        3)  Modify 'courR14.bmp' with some image editor ( like
+            Adobe Photoshop, The GIMP,...) .
+            For example,  add '0'(zero) with a slant line.
+            Save that BMP file in the name 'cr14.bmp'.
+
+        4)  Use bmp2bdf.
+                $ bmp2bdf courR14.bdf cr14.bmp cr14.bdf
+            You get 'cr14.bdf'.
+
+
+LIMITATION
+        o)  This tool accepts only the BMP files made with
+            'bdf2bmp'.
+
+        o)  This tool accepts only that BMP files:
+                4/8/24 bits per pixel(16/256/16M colors),
+                Windows-format,
+                none compression.
+
+        o)  This tool cannot modify DWIDTH,  that is,  the
+            distance from this glyph origin to the next glyph
+            origin.
+            If you want to modify that,  you must modify the
+            BDF file directly,  or should use other BDF
+            editors.
+
+        This tool internally distinguishes black(R,G,B = 0,0,0)
+        from any other colors in the color palette.  This tool
+        recognizes white-backgrounds, spacing, and gray colors
+        to be equal.
+
+
+COMPILE
+        The author succeeded compiling & executing in
+                Linux 2.2.14 and gcc(egcs-2.91.66)
+
+                and
+
+                Windows98 SecondEdition and
+                Borland C++ Compiler 5.5.1 for Win32
+
+                on
+
+                IBM-PC compatible, Intel Celeron 433MHz
+
+        This source-code is written in ANSI C style.
+        So, you can probably compile and execute in other
+        environments.
+
+        An example to compile and install in Linux system:
+                $  cc bmp2bdf.c -o bmp2bdf
+                $  su
+                #  cp bmp2bdf /usr/local/bin
+
+
+FILES
+        bmp2bdf.c       source code
+        bmp2bdf.exe     binary for Windows
+        README          document (this file)
+        README.ja       document for Japanese
+
+
+COPYRIGHT
+        Copyright (c) 2001 ITOU Hiroki All rights reserved.
+        See the source-code for details.
+
+
+--
+itouh
+http://www.geocities.co.jp/Playtown-Domino/7021/

@@ -1,0 +1,11 @@
+bdf2bmp version 0.6
+Usage: bdf2bmp [-option] input-bdf-file output-bmp-file
+Option:
+  -sN    spacing N pixels (default N=2)
+             N value can range from 0 to 32
+  -cN    specifying N colomns in grid (default N=32)
+             N value can range from 1 to 1024
+  -w     showing the baseline and the widths of glyphs
+             with gray colors
+  -i     prompting whether to overwrite an existing file
+  -h     print help

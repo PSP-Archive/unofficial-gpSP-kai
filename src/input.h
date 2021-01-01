@@ -33,8 +33,8 @@ typedef enum
   BUTTON_RIGHT = 0x10,
   BUTTON_START = 0x08,
   BUTTON_SELECT = 0x04,
-  BUTTON_B = 0x02,
   BUTTON_A = 0x01,
+  BUTTON_B = 0x02,
   BUTTON_NONE = 0x00
 } input_buttons_type;
 

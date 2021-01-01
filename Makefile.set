@@ -5,13 +5,13 @@
 
 VERSION_MAJOR = 3
 VERSION_MINOR = 4
-VERSION_BUILD = 3
+VERSION_BUILD = 4
 
 # コンパイル条件の設定
 # バージョン表記にtestとBUILD番号を含めるかどうかの設定
 TEST_MODE = 1
 
-USE_DEBUG = 1
+USE_DEBUG = 0
 
 # WLANのON/OFF
 USE_ADHOC = 0

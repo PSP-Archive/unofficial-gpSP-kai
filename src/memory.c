@@ -2611,14 +2611,14 @@ s32 load_gamepak(char *name)
   {
     // プログレスバーの表示
     set_cpu_clock(9); // 一時的に333MHzに
-    init_progress(5, "Load ZIP ROM.");  // TODO エラーチェック
+    init_progress(5, msg[MSG_LOAD_ZIP_ROM]);  // TODO エラーチェック
     file_size = load_file_zip(name);
     if(file_size == -2)
       file_size = load_gamepak_raw(ZIP_TMP);
   }
   else
   {  // プログレスバーの表示
-    init_progress(5, "Load ROM.");  // TODO
+    init_progress(5, msg[MSG_LOAD_ROM]);  // TODO
     file_size = load_gamepak_raw(name);
   }
   update_progress();
@@ -2658,7 +2658,7 @@ s32 load_gamepak(char *name)
     add_cheats(cheats_filename);
     update_progress();
 
-    show_progress("Load ROM OK.");  // TODO
+    show_progress(msg[MSG_LOAD_ROM_OK]);  // TODO
 
     return 0;
   }
@@ -3704,7 +3704,7 @@ u32 load_state(char *savestate_filename, u32 slot_num)
   ver = 0x00010000;
   pause_sound(1);
 
-  sprintf(buf,"Load State No.%d.", (int)slot_num);
+  sprintf(buf, msg[MSG_LOAD_STATE_No], (int)slot_num);
   if(yesno_dialog(buf) == 1)
     return 0;
 
@@ -3834,7 +3834,7 @@ u32 save_state(char *savestate_filename, u16 *screen_capture, u32 slot_num)
 
   pause_sound(1);
 
-  sprintf(buf,"Save State No.%d.", (int)slot_num);
+  sprintf(buf, msg[MSG_SAVE_STATE_No], (int)slot_num);
   if(yesno_dialog(buf) == 1)
     return 0;
 

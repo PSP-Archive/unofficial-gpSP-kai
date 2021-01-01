@@ -23,9 +23,9 @@ include $(PSPSDK)/lib/build.mak
 
 all:
 	psp-build-exports -s $(PRX_EXPORTS)
-	@cp $(TARGET).prx ../../gpsp/
-	@cp $(TARGET).S ../../src/
-#	@cp $(TARGET).h ../../src/
+	@cp $(TARGET).prx ../../gpsp
+	@cp $(TARGET).S ../../src
+#	@cp $(TARGET).h ../../src
 	@rm -f $(TARGET).prx
 	@rm -f $(TARGET).S
 	@rm -f *.o

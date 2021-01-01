@@ -206,8 +206,8 @@ gui_action_type get_gui_input()
 u32 button_psp_mask_to_config[] =
 {
   PSP_CTRL_TRIANGLE,
-  PSP_CTRL_CIRCLE,
   PSP_CTRL_CROSS,
+  PSP_CTRL_CIRCLE,
   PSP_CTRL_SQUARE,
   PSP_CTRL_LTRIGGER,
   PSP_CTRL_RTRIGGER,
