@@ -1,6 +1,6 @@
 ![Game list](image/up_gbsp_kai_logo01_trim.png)
 
-<b><i>Unofficial gpSP kai crated by Takka.</b>
+<b><i>Unofficial gpSP kai crated by Takka</b>
 -gameplaySP Gameboy Advance emulator for Playstation Portable.</I>
 
 ![Game list](image/background.png)
@@ -22,7 +22,7 @@
 2. <b><i>Golden Sun series</i></b> : sound issue, still unplayable.
 The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in which you have to fly to a different location. The problem is, whenever I try to do so the message 'the game will not run in this hardware' appears on the screen.
 
-3. <b><i>Powder 117</b><i> and <i><b>Qwak</i></b> : failed to run.
+3. <b><i>Powder 117</b></i> and <i><b>Qwak</i></b> : failed to run.
 
 4. <b><i>Golden Sun</b></i> : it's Sequel Major Bugs,Still Considered Unplayable.
 
