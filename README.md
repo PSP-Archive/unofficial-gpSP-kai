@@ -22,6 +22,7 @@ Then he came out of the emulator and again went to the game, and the game is boo
 the size of saving: 128 KB (131,072 bytes).
 Preserved under the name: "Pokemon Mystery Dungeon - Red Rescue Team.sav"
 In the folder: UO gpSP kai/GBA/SAV
+
 ![Game list](image/Pokemon Mystery Dungeon - Red Rescue Team.gif)
 
 <code>(E)</code> version of Pokemon Mystery Dungeon has the save problem. <code>(U)</code>version works fine.
@@ -33,7 +34,7 @@ In the folder: UO gpSP kai/GBA/SAV
 6. <b><i>Advance War 2</b></i> and <b><i>Popup</i></b> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
 See the different:
 
-Image
+![Game list](image/gpsp.jpg)
 
 UO gpSP kai ver 3.4 test 3 Build 92 also have same prob. Im trying using old version of gpsp ver: 3.2 user test 02 no prob at all. Hope you can fix this glitches.
 gpSP ver 3.2 user test 02.
