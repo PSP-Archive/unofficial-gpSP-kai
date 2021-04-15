@@ -7,13 +7,15 @@
 
 ## Credits
 
-<b>Exophase</b> : main developer - Official release <b><i>"gpSP"</b></i> 0.91.
+- <b>Exophase</b> : main developer - Official release <b><i>"gpSP"</b></i> 0.91.
 
-<b>takka</b> : developer - Unofficial release <b><i>"Uo gpSP kai"</b></i> 3.4 test 3 build 92.
+- <b>takka</b> : developer - Unofficial release <b><i>"Uo gpSP kai"</b></i> 3.4 test 3 build 92.
 
-<b>toBsucht</b> : for testing and helping translating.
+- <b>toBsucht</b> : for testing and helping translating.
 
 ## Known issues (minor problems)
+
+- Compatibility list
 
 **-Note : Some games workarounds trick, 32mb Rom only work unzip.**
 
@@ -96,7 +98,7 @@ the game is not able to load/create a save file, it says "the game cannot be sav
 tempGBA can load/save just fine.</i>
 
 in game
-place a .SAV in your rom directory
+place a .SAV in your rom directory.
 
 1.gpSP
 ![Game list](image/gpspkai.png)
@@ -107,7 +109,7 @@ place a .SAV in your rom directory
 
 **Note : Other games are working great.**
 
--<h3>RAM</h3>
+## <u><h3>RAM</h3></u>
 
 ![Game list](image/32mb.gif)
 
@@ -132,7 +134,7 @@ Generally I normally work all of these games.
 
 ## Creating & Adding Cheats [Uo gpSP kai]
 
-Requirements::
+<u><b>::Requirements::</b></u>
 
 - Action Replay or Gameshark Codes for a certain game
 - gpSP Kai Cheat Creator.exe Downlaod
@@ -144,7 +146,7 @@ Requirements::
 
 3) There is a specific form in which you need to enter these codes to get a .cht file.
 
-Action Replay Form :
+<u>Action Replay Form :</u>
 
 PAR_V3 (name of code) <---make sure PAR_V3 and the code name is separated by a space
 XXXXXXXX YYYYYYYY
@@ -152,7 +154,7 @@ XXXXXXXX YYYYYYYY
 
 Enter the code as shown in the X and Y column above if it is an Action Reply Code. Remember that there are 8 characters in each column because it is an Action Replay Code. Column X is separated from Column Y with a space. If the code has more than two lines, do not get part of it and instead get the whole thing.
 
-Gameshark Form :
+u>Gameshark Form :</u>
 
 gameshark_V3 (name of code) <-----again, gameshark_V3 is separated from the code name
 XXXXXXXXXXXX
@@ -174,7 +176,7 @@ Enter the code as shown in the X rows. In gameshark form, there are not columns,
 
 10) Loading the certain .cht file will show you the cheats that are in that .cht file. You can disable/enable those cheats in the menu.
 
-## Release log
+## Changes Log
 
 -<b>Unofficial gpSP Kai 3.4 Test 4 Build 230</b>
         Fixed regression: Analog Nub mapping works separately from Dpad again.
