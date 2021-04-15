@@ -6,6 +6,8 @@
 
 ## Known issues (minor problems)
 
+- Some games workarounds trick.
+
 1. <b><i>Sigma Star Saga</i></b> : still unable to show health bar.
 
 2. <b><i>Golden Sun series</i></b> : still unplayable.
@@ -54,7 +56,11 @@ gpSP ver 3.2 user test 02.
 
 11. <b><i>Breath of Fire 2</b></i> : Highfort after boss battle during escape scene.
 
-12. <b><i>Wario Ware Inc.</b></i> : Final Wario Games in Story Mode, graphics will randomly glitch between games, making it impossible to play any games afterwards
+12. <b><i>Wario Ware Inc.</b></i> : Final Wario Games in Story Mode, graphics will randomly glitch between games, making it impossible to play any games afterwards.
+
+13. <b><i>Mario Advanced 4</b></i> : (And probably many other games)
+Patching GBA ROMs.
+If other games works using the ROM patching solution.
 
 -<b>RAM</b>
 
