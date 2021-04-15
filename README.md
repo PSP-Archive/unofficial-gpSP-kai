@@ -36,7 +36,7 @@ The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in 
 7. <b><i>Grand Theft Auto Advance</b></i> - has a bug that after starting dialogues game crashes.
 Save allows you to bypass the damaged portion in the dump of the Rom.
 
-   [Use save or savestate](http://www.mediafire.com/download/7ts7jm7ihpl81v4/Grand+Theft+Auto+Advance+SAV.zip)
+   ![Game list](gtaasav.zip)
 Saving files expanded in GBA/SAV folder.
 The name of conservation should be exactly the same as ZIP archive, which is ROM gba under any name.
 When loading a game, choose load of preservation, and not as a new game.
