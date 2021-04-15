@@ -179,6 +179,20 @@ Enter the code as shown in the X rows. In gameshark form, there are not columns,
 
 10) Loading the certain .cht file will show you the cheats that are in that .cht file. You can disable/enable those cheats in the menu.
 
+## Comparison
+
+<b><i>TempGBA-mod vs Uo gpSP kai</b></i>
+
+TempGBA-mod, I was wondering which emulator is better, im saying this because the video quality in tempGBA's "150% SW" mode, make the video output look much cleaner, dunno what exactly is the difference between it and "GU" (which looks a lot like the video output gpSP has) but just looks better.
+i also noticed that pokemon fire red and ultra violet dont tell me that the 1m chip isnt there, does tempGBA support 1m saves while gpSP doesn't?
+nvm, figured out that tempGBA has a rudimentary version of this, each game has its own control profile
+why is it that neither emulator saves the CPU frenquency i set it to? <--- figured out how to make tempGBA do it, gpSP seemingly cant do it.
+UO gpSP Kai to be the fastest. It does support 1M saves too. Here's the latest version: [Uo gpSP kai mod 3.5](http://www.mediafire.com/file/daukxkdjmpjat94/uo_gpsp_kai_latest.tar.lzma/file)
+i said regarding 1m saves is that for some reason they gave me an error in gpSP but not on tempGBA, so if the support is there, why doesnt it work?
+TempGBA is supposed to have better compatibility / less glitches for some games than gpSP (e.g. Golden Sun). The speed, as far I could see back when I used gpSP is about the same.
+
+As for the "GU" output, that's supposed to be accelerated video (=faster), whereas SW is software, which should probably be slower, although theoretically more accurate (less glitches). I use GU all the time though, and have yet to find a game that has any problem with it.
+
 ## Changes Log
 
 -<b>Unofficial gpSP Kai 3.4 Test 4 Build 230</b>
