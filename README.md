@@ -3,6 +3,17 @@
 
 # Release log
 
+-<b>Unofficial gpSP Kai 3.4 Test 4 Build 230</b>
+        Fixed regression: Analog Nub mapping works separately from Dpad again.
+        Fixed regression: Now by default, GBA button 'B' is mapped to 'Cross' and GBA button 'A' is
+        mapped to 'Circle' to match a real GBA. The 225 build had these buttons reversed by default.
+       'Update backup' is now defaulted to 'Automatic' rather than 'Exit only'. It can still be
+        configured on a per game basis.
+
+<b>Update</b>
+Use this new '230' build, not the '228' build I originally uploaded (there was a bug in keymapping). Also, if you used the 'cfg' folder from the '228' archive, replace it with the one in this '230' archive or the '225' archive (they're both the same).
+Also, in addition to the 'Slim' build, the 'Fat' build is now tested as well and reported to be working fine.
+
 -<b>Unofficial gpSP kai 3.4 test 4 build</b>
 	Compatible with CFW 5.50GEN-B
 	Corrected some sound gaps
