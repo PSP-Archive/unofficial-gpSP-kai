@@ -22,7 +22,7 @@ Then he came out of the emulator and again went to the game, and the game is boo
 the size of saving: 128 KB (131,072 bytes).
 Preserved under the name: "Pokemon Mystery Dungeon - Red Rescue Team.sav"
 In the folder: UO gpSP kai/GBA/SAV
-Image
+![Game list](image/Pokemon Mystery Dungeon - Red Rescue Team.gif)
 
 <code>(E)</code> version of Pokemon Mystery Dungeon has the save problem. <code>(U)</code>version works fine.
 
