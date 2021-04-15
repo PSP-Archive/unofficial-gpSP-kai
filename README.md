@@ -6,11 +6,20 @@
 
 ## Known issues (minor problems)
 
-1. <b><i>Sigma Star Saga</i></b> - still unable to show health bar.
-2. <b><i>Golden Sun series</i></b> - still unplayable.
+1. <b><i>Sigma Star Saga</i></b> : still unable to show health bar.
+
+2. <b><i>Golden Sun series</i></b> : still unplayable.
 The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in which you have to fly to a different location. The problem is, whenever I try to do so the message 'the game will not run in this hardware' appears on the screen.
-3. <b><i>Powder 117</b><i> and <i><b>Qwak</i></b> - failed to run.
-4. <b><i>Grand Theft Auto Advance</b></i> - has a bug that after starting dialogues game crashes.
+
+3. <b><i>Powder 117</b><i> and <i><b>Qwak</i></b> : failed to run.
+
+4. <b><i>Golden Sun</b></i> : it's Sequel Major Bugs,Still Considered Unplayable.
+
+5. <b><i>Kingdoms Hearts : Chain of Memories</b></i> : Works Unzip file, Freezing Up Save State After Load State it Will Run.
+
+6. <b><i>Riviera</b></i> : Works - Only Run Unzip file.
+
+7. <b><i>Grand Theft Auto Advance</b></i> - has a bug that after starting dialogues game crashes.
 Save allows you to bypass the damaged portion in the dump of the Rom.
 
    [Use save or savestate](http://www.mediafire.com/download/7ts7jm7ihpl81v4/Grand+Theft+Auto+Advance+SAV.zip)
@@ -31,7 +40,7 @@ In the folder: UO gpSP kai/GBA/SAV
 
 2485 - Pokemon Mystery Dungeon - Red Rescue Team (U)(RDG).gba        = POKE DUNGEON B24E 01 0 = Save completed!
 
-6. <b><i>Advance War 2</b></i> and <b><i>Popup</i></b> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
+8. <b><i>Advance War 2</b></i> and <b><i>Popup</i></b> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
 See the different:
 
 ![Game list](image/gpsp.jpg)
@@ -42,6 +51,8 @@ gpSP ver 3.2 user test 02.
 -<b>RAM</b>
 
 Other gpSP emulators seem to detect I have extra memory available though. I will use build 152 because I like the extra memory.
+
+![Game list](image/32mb.gif)
 
 - UO gpSP Kai v3.4 test 4 build 225 = 16mb MAX
 - UO gpSP Kai v3.5 Mod = 32mb MAX
