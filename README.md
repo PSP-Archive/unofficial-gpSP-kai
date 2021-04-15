@@ -194,6 +194,7 @@ i said regarding 1m saves is that for some reason they gave me an error in gpSP 
 TempGBA is supposed to have better compatibility / less glitches for some games than gpSP (e.g. Golden Sun). The speed, as far I could see back when I used gpSP is about the same.
 
 As for the "GU" output, that's supposed to be accelerated video (=faster), whereas SW is software, which should probably be slower, although theoretically more accurate (less glitches). I use GU all the time though, and have yet to find a game that has any problem with it.
+Usually the difference in the many version of emulator comes down to game compatibility. Sometimes game rom load better on gpsp, sometimes they run better on tempgba. Sometimes rom may even work on one and not the other. I know that tempgba doesn’t have the option for full screen 16:9 aspect ratio. Uo Gpsp Kai offers full screen but the image is extremely pixelated. At the end, it’s comes down to personal preferences. I can’t stand seeing the black borders so I alway use emulator that allow for full screens, even if it means that the images is stretched and pixelated.
 
 ## Change log
 
