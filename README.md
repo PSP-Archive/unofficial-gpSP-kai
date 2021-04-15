@@ -39,7 +39,7 @@ Image
 UO gpSP kai ver 3.4 test 3 Build 92 also have same prob. Im trying using old version of gpsp ver: 3.2 user test 02 no prob at all. Hope you can fix this glitches.
 gpSP ver 3.2 user test 02.
 
--RAM
+-<b>RAM</b>
 
 Other gpSP emulators seem to detect I have extra memory available though. I will use build 152 because I like the extra memory.
 
@@ -64,6 +64,22 @@ Other gpSP emulators seem to detect I have extra memory available though. I will
 <b>Update</b>
 Use this new '230' build, not the '228' build I originally uploaded (there was a bug in keymapping). Also, if you used the 'cfg' folder from the '228' archive, replace it with the one in this '230' archive or the '225' archive (they're both the same).
 Also, in addition to the 'Slim' build, the 'Fat' build is now tested as well and reported to be working fine.
+
+-<b>Unofficial gpSP kai 3.4 Test 4 Build 225</b>
+Fixed lots of bugs, mostly inconsistencies in the program code and the code to be translated.
+Added new lines in the emulator menu and accordingly in translation language files.
+Painted pixel by pixel, and compiled a new font "eureka.fbm".
+Also in the font added all German-Spanish-Portuguese-Greek characters umlauts with full Western European encoding cp1252 with the required width for each letter.
+Fixed some items are broken before.
+Fixed alternating list by changing the buttons in the joystick configuration.
+Now run almost all games from ZIP archives. Previously, large files are not unpacked emulator.
+
+<b>Other minor fixes.</b>
+
+Signed to run on the official firmware, and of course on the custom firmware.
+For emulator is available about 3000 games *.gba or *.bin format. [note: sentence removed by mods]
+To save space on the memory card, compress images * .gba in ZIP-format archives.
+Images should be expanded in the folder: "UO gрSP kai \ GBA \ ROM".
 
 -<b>Unofficial gpSP kai 3.4 test 4 build</b>
 	Compatible with CFW 5.50GEN-B
