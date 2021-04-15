@@ -195,6 +195,23 @@ TempGBA is supposed to have better compatibility / less glitches for some games 
 
 As for the "GU" output, that's supposed to be accelerated video (=faster), whereas SW is software, which should probably be slower, although theoretically more accurate (less glitches). I use GU all the time though, and have yet to find a game that has any problem with it.
 Usually the difference in the many version of emulator comes down to game compatibility. Sometimes game rom load better on gpsp, sometimes they run better on tempgba. Sometimes rom may even work on one and not the other. I know that tempgba doesn’t have the option for full screen 16:9 aspect ratio. Uo Gpsp Kai offers full screen but the image is extremely pixelated. At the end, it’s comes down to personal preferences. I can’t stand seeing the black borders so I alway use emulator that allow for full screens, even if it means that the images is stretched and pixelated.
+I once played them both on Temp-mod and they worked fine. Got through the tutorial level on Megaman and through the first boss on Castlevania. Framerate showed a stable 60fps with no issues or drops in/for either.
+
+The only title I have trouble with is FF VI on both emulators because it slows down to a crawl whenever a text box appears or any of the sprites on screen move around. I found the only solution for it to be to the fast forward mode (FF or triangle by default) on TempGBA-Mod which according to the emulator speeds the game up to 70-90fps, but it's actually making it run at relatively full speed and no glitches or audio break ups.
+1.TempGBA is slower, but is more accurate and has better compatibility.
+
+2.Uo gpSP Kai is faster and has cheat support, but lower compatibility.
+The problem is that i actually would like to play " Final Fantasy VI - Sound Restoration" (Europe) on my PSP.
+
+I try with this version TempGBA4PSP (wich it seems to be the lastest version)
+
+
+
+But the game is laggy, especially when characters talk.
+
+I also tried with UO gpSP Kai (v3.4 test 4 build 230) but the emulator show me the following error : bad jump 80080180 (30000620) and then crash.
+
+I have read on an other post (/r/FinalFantasy/comments/4lg4ad/whats_the_best_way_to_play_ffvi_handheld/) that gpSP-J seems to run this game fine. That's why i search this emulator
 
 ## Change log
 
