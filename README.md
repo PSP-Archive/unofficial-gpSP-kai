@@ -3,6 +3,15 @@
 <b><i>Unofficial gpSP kai crated by Takka.</b>
 -gameplaySP Gameboy Advance emulator for Playstation Portable.</I>
 
+![Game list](image/background.png)
+
+## Credits
+
+<b>Exophase</b> : main developer - Official release <b><i>"gpSP"</b></i> 0.91.
+
+<b>takka</b> : developer - Unofficial release <b><i>"Uo gpSP kai"</b></i> 3.4 test 3 build 92.
+
+<b>toBsucht</b> : for testing and helping translating.
 
 ## Known issues (minor problems)
 
@@ -734,11 +743,3 @@ takka
 takka@tfact.net
 blog http://takka.tfact.jp/blog/
 svn http://sourceforge.jp/projects/gpsp-kai
-
-## Credits
-
-<b>Exophase</b> : main developer - Official release <b><i>"gpSP"</b></i> 0.91. latest
-
-<b>takka</b> : developer - UnOfficial release <b><i>"UO gpSP kai"</b></i> 3.4 test 3 build 92. latest
-
-<b>toBsucht</b> : for testing and helping translating.
