@@ -198,19 +198,15 @@ Usually the difference in the many version of emulator comes down to game compat
 I once played them both on Temp-mod and they worked fine. Got through the tutorial level on Megaman and through the first boss on Castlevania. Framerate showed a stable 60fps with no issues or drops in/for either.
 
 The only title I have trouble with is FF VI on both emulators because it slows down to a crawl whenever a text box appears or any of the sprites on screen move around. I found the only solution for it to be to the fast forward mode (FF or triangle by default) on TempGBA-Mod which according to the emulator speeds the game up to 70-90fps, but it's actually making it run at relatively full speed and no glitches or audio break ups.
+
 1.TempGBA is slower, but is more accurate and has better compatibility.
 
 2.Uo gpSP Kai is faster and has cheat support, but lower compatibility.
+
 The problem is that i actually would like to play " Final Fantasy VI - Sound Restoration" (Europe) on my PSP.
-
-I try with this version TempGBA4PSP (wich it seems to be the lastest version)
-
-
-
+I try with this version TempGBA4PSP
 But the game is laggy, especially when characters talk.
-
-I also tried with UO gpSP Kai (v3.4 test 4 build 230) but the emulator show me the following error : bad jump 80080180 (30000620) and then crash.
-
+I also tried with UO gpSP Kai (3.4 test 4 build 230) but the emulator show me the following error : bad jump 80080180 (30000620) and then crash.
 I have read on an other post (/r/FinalFantasy/comments/4lg4ad/whats_the_best_way_to_play_ffvi_handheld/) that gpSP-J seems to run this game fine. That's why i search this emulator
 
 ## Change log
