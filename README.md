@@ -78,7 +78,7 @@ If other games works using the ROM patching solution.
 27. <b><i>Steel Empire</b></i> : Black Screen at start.
 28. <b><i>Super Monkey Ball Jr.</b></i> : Game crashes, was working on version 1.0.4.
 29. <b><i>Street Racing Syndicate</b></i> : Crashing when choosing language.
-30. <b><i>DragonBall Z Legacy of Goku 2 : Work fine, but sound issue
+30. <b><i>DragonBall Z Legacy of Goku 2<b><i> : Work fine, but sound issue
 31. <b><i>Metroid Zero Mission<b><i> : Work fine, sound issue A weird warping of the music that causes the audio to bob and weave, as well as a periodic, persistent ticking sound.
 
 **Note : Other games are working great.**
@@ -707,13 +707,16 @@ Images should be expanded in the folder: "UO gрSP kai \ GBA \ ROM".
 	The set sound buffer size is now saved in the gpSP CFG file.
 		gpSP CFG file size changed to 56byte-> 72byte.
 
-## Credits
-
-<b>Exophase</b> : main developer - Official release "gpSP" latest 0.91.
-<b>takka</b> : developer - UnOfficial release "UO gpSP kai" latest 3.4 test 3 build 92.
-<b>toBsucht</b> : for testing and helping translating
 
 takka
 takka@tfact.net
 blog http://takka.tfact.jp/blog/
 svn http://sourceforge.jp/projects/gpsp-kai
+
+## Credits
+
+<b>Exophase</b> : main developer - Official release "gpSP" latest 0.91.
+
+<b>takka</b> : developer - UnOfficial release "UO gpSP kai" latest 3.4 test 3 build 92.
+
+<b>toBsucht</b> : for testing and helping translating.
