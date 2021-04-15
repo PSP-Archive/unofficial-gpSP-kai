@@ -32,8 +32,8 @@ When loading a game, choose load of preservation, and not as a new game.
 5. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> - a reached to save room in the tent where he slept Pokemon, and game normally saved.
 Then he came out of the emulator and again went to the game, and the game is booted normally, like you have in the picture "Continue" (Resume your adventure from where you last saved.).
 the size of saving: 128 KB (131,072 bytes).
-Preserved under the name: "Pokemon Mystery Dungeon - Red Rescue Team.sav"
-In the folder: UO gpSP kai/GBA/SAV
+Preserved under the name : "Pokemon Mystery Dungeon - Red Rescue Team.sav"
+In the folder : UO gpSP kai/GBA/SAV
 
 ![Game list](image/pk.gif)
 
@@ -43,8 +43,8 @@ In the folder: UO gpSP kai/GBA/SAV
 
 2485 - Pokemon Mystery Dungeon - Red Rescue Team (U)(RDG).gba        = POKE DUNGEON B24E 01 0 = Save completed!
 
-8. <b><i>Advance War 2</b></i> and <b><i>Popup</i></b> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
-See the different:
+8. <b><i>Advance War 2</b></i> : Popup on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
+See the different :
 
 ![Game list](image/gpsp.jpg)
 
