@@ -15,7 +15,7 @@ The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in 
 
 4. <b><i>Golden Sun</b></i> : it's Sequel Major Bugs,Still Considered Unplayable.
 
-5. <b><i>Kingdoms Hearts : Chain of Memories</b></i> : Works Unzip file, Freezing Up Save State After Load State it Will Run.
+5. <b><i>Kingdoms Hearts : Chain of Memories</b></i> : Works Unzip file, it freezes at the opening movie and the sound goes all messed up, save state After Load State it Will Run fine.
 
 6. <b><i>Riviera</b></i> : Works - Only Run Unzip file.
 
