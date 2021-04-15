@@ -6,11 +6,11 @@
 
 ## Known issues (minor problems)
 
-- Some games workarounds trick.
+**-Note : Some games workarounds trick, 32mb Rom only work unzip.**
 
 1. <b><i>Sigma Star Saga</i></b> : still unable to show health bar.
 
-2. <b><i>Golden Sun series</i></b> : still unplayable.
+2. <b><i>Golden Sun series</i></b> : sound issue, still unplayable.
 The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in which you have to fly to a different location. The problem is, whenever I try to do so the message 'the game will not run in this hardware' appears on the screen.
 
 3. <b><i>Powder 117</b><i> and <i><b>Qwak</i></b> : failed to run.
@@ -99,6 +99,20 @@ If other games works using the ROM patching solution.
 Simply, if a large 32MB game in a ZIP-archive then it will be a long time in the TEMP unpacked, you just need to wait a minute, there is a diode will blink rapidly.
 If you do not want to wait, and to play immediately loaded, then unzip and run *.gba.
 Generally I normally work all of these games.
+
+<i>a real save, not a save state.
+the game is not able to load/create a save file, it says "the game cannot be saved"
+tempGBA can load/save just fine.</i>
+
+in game
+place a .SAV in your rom directory
+
+1.gpSP
+![Game list](image/gpspkai.png)
+2.TempGBA
+![Game list](image/tempgba.png)
+
+**Note : 32mb Save working on TempGBA. and gpSP it is still unsupported 32mb save data.**
 
 - UO gpSP Kai 3.4 test 4 build 225 = 16mb Max
 - UO gpSP Kai 3.5 Mod = 32mb Max
