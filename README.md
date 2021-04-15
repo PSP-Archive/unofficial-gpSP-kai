@@ -17,7 +17,7 @@
 
 - <u>Compatibility list</u>
 
-**- Note : Some games workarounds trick, 32mb Rom only work unzip.**
+**- Note : Some games workarounds trick, 32mb Rom only works unzip.**
 
 1. <b><i>Sigma Star Saga</i></b> : still unable to show health bar.
 
@@ -116,11 +116,11 @@ place a .SAV in your rom directory.
 
 ![Game list](image/32mb.gif)
 
-1. Bleach Advance                             - 32.0 MB
-2. Kingdom Hearts - Chain of Memories         - 32.0 MB
-3. Mother 3                                   - 32.0 MB
-4. Riviera - The Promised Land                - 32.0 MB
-5. Pokemon Mystery Dungeon - Red Rescue Team  - 32.0 MB
+1. Bleach Advance                             : 32.0 MB
+2. Kingdom Hearts - Chain of Memories         : 32.0 MB
+3. Mother 3                                   : 32.0 MB
+4. Riviera - The Promised Land                : 32.0 MB
+5. Pokemon Mystery Dungeon - Red Rescue Team  : 32.0 MB
 
 Simply, if a large 32MB game in a ZIP-archive then it will be a long time in the TEMP unpacked, you just need to wait a minute, there is a diode will blink rapidly.
 If you do not want to wait, and to play immediately loaded, then unzip and run *.gba.
@@ -135,7 +135,7 @@ Generally I normally work all of these games.
 32mb ROM / 32mb buff = Faster loading, less glitchy
 32mb ROM / 16mb Buff = Very slow loading, PSP freeze sometimes, unpacks and duplicates *.zip ROM to *.gba so uses more space. At least it does on a few other gpSP emulators.
 
-## Creating & Adding Cheats [Uo gpSP kai]
+## Creating & Adding Cheats
 
 <u><b>::Requirements::</b></u>
 
