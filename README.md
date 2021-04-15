@@ -11,7 +11,7 @@
 
 - <b>takka</b> : developer - Unofficial release <b><i>"Uo gpSP kai"</b></i> 3.4 test 3 build 92.
 
-- <b>EricPshat</b> : developer - Unofficial release<b><i>"Uo gpSP kai"</b></i> 3.4 test 4 build 230.
+- <b>EricPshat</b> : developer - Unofficial release <b><i>"Uo gpSP kai"</b></i> 3.4 test 4 build 230.
 
 - <b>toBsucht</b> : for testing and helping translating.
 
