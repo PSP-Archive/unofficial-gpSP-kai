@@ -48,15 +48,24 @@ See the different:
 UO gpSP kai ver 3.4 test 3 Build 92 also have same prob. Im trying using old version of gpsp ver: 3.2 user test 02 no prob at all. Hope you can fix this glitches.
 gpSP ver 3.2 user test 02.
 
+9. <b><i>Megaman Battle Network 1</b></i> : End of the game when entering underground railroad.
+
+10. <b><i>Megaman Battle Network 4</b></i> : Apparently an unknown random virus encounter.
+
+11. <b><i>Breath of Fire 2</b></i> : Highfort after boss battle during escape scene.
+
+12. <b><i>Wario Ware Inc.</b></i> : Final Wario Games in Story Mode, graphics will randomly glitch between games, making it impossible to play any games afterwards
+
 -<b>RAM</b>
 
 Other gpSP emulators seem to detect I have extra memory available though. I will use build 152 because I like the extra memory.
 
 ![Game list](image/32mb.gif)
+32mb Roms
 
-- UO gpSP Kai v3.4 test 4 build 225 = 16mb MAX
-- UO gpSP Kai v3.5 Mod = 32mb MAX
-- UO gpSP Kai v3.4 test 3 build 152 = 32mb MAX
+- UO gpSP Kai 3.4 test 4 build 225 = 16mb Max
+- UO gpSP Kai 3.5 Mod = 32mb Max
+- UO gpSP Kai 3.4 test 3 build 152 = 32mb Max
 
 
 32mb Max ROM Buff achieved when Unlock Extra Memory is enabled from Recovery Menu... If I disable Unlock Extra Memory, it is 16mb again but other gpSP emulators are still 32mb Max ROM Buff.
