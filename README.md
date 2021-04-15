@@ -12,10 +12,21 @@ The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in 
 3. <b><i>Powder 117</b><i> and <i><b>Qwak</i></b> - failed to run.
 4. <b><i>Grand Theft Auto Advance</b></i> - has a bug that after starting dialogues game crashes.
 Save allows you to bypass the damaged portion in the dump of the Rom.
+
    [Use save or savestate](http://www.mediafire.com/download/7ts7jm7ihpl81v4/Grand+Theft+Auto+Advance+SAV.zip)
 Saving files expanded in GBA/SAV folder.
 The name of conservation should be exactly the same as ZIP archive, which is ROM gba under any name.
 When loading a game, choose load of preservation, and not as a new game.
+5. <b><i>Pokemon Mystery Dungeon - Red Rescue Team.zip</b></i>
+oddly enough, reached to save room in the tent where he slept Pokemon, and game normally saved.
+Then he came out of the emulator and again went to the game, and the game is booted normally, like you have in the picture "Continue" (Resume your adventure from where you last saved.).
+the size of saving: 128 KB (131,072 bytes).
+Preserved under the name: "Pokemon Mystery Dungeon - Red Rescue Team.sav"
+In the folder: UO gpSP kai/GBA/SAV
+Image
+<code>(E)</code> version of Pokemon Mystery Dungeon has the save problem. <code>(U)</code>version works fine.
+2567 - Pokemon Mystery Dungeon - Red Rescue Team (E)(Rising Sun).gba = POKE DUNGEON B24P 01 0 = Save failed!
+2485 - Pokemon Mystery Dungeon - Red Rescue Team (U)(RDG).gba        = POKE DUNGEON B24E 01 0 = Save completed!
 6. <b><i>Advance War 2</b></i> and <b><i>Popup</i></b> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
 See the different:
 
