@@ -89,11 +89,16 @@ If other games works using the ROM patching solution.
 
 
 ![Game list](image/32mb.gif)
+
 1. Bleach Advance                             - 32.0 MB
 2. Kingdom Hearts - Chain of Memories         - 32.0 MB
 3. Mother 3                                   - 32.0 MB
 4. Riviera - The Promised Land                - 32.0 MB
 5. Pokemon Mystery Dungeon - Red Rescue Team  - 32.0 MB
+
+Simply, if a large 32MB game in a ZIP-archive then it will be a long time in the TEMP unpacked, you just need to wait a minute, there is a diode will blink rapidly.
+If you do not want to wait, and to play immediately loaded, then unzip and run *.gba.
+Generally I normally work all of these games.
 
 - UO gpSP Kai 3.4 test 4 build 225 = 16mb Max
 - UO gpSP Kai 3.5 Mod = 32mb Max
