@@ -80,7 +80,7 @@ If other games works using the ROM patching solution.
 28. <b><i>Super Monkey Ball Jr.</b></i> : Game crashes, was working on version 1.0.4.
 29. <b><i>Street Racing Syndicate</b></i> : Crashing when choosing language.
 30. <b><i>DragonBall Z Legacy of Goku 2</b></i> : Work fine, but sound issue
-31. <b><i>Metroid Zero Mission<b><i> : Work fine, sound issue A weird warping of the music that causes the audio to bob and weave, as well as a periodic, persistent ticking sound.
+31. <b><i>Metroid Zero Mission</b></i> : Work fine, sound issue A weird warping of the music that causes the audio to bob and weave, as well as a periodic, persistent ticking sound.
 
 **Note : Other games are working great.**
 
