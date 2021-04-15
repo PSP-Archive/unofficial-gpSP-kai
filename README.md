@@ -33,14 +33,14 @@ The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in 
 
 6. <b><i>Riviera</b></i> : Works - Only Run Unzip file.
 
-7. <b><i>Grand Theft Auto Advance</b></i> - has a bug that after starting dialogues game crashes.
+7. <b><i>Grand Theft Auto Advance</b></i> : has a bug that after starting dialogues game crashes.
 Save allows you to bypass the damaged portion in the dump of the Rom.
 
    [GTA Advance .SAV file](http://www.mediafire.com/file/7ts7jm7ihpl81v4/Grand_Theft_Auto_Advance_SAV.zip/file)
 expanded in GBA/SAV folder.
 The name of conservation should be exactly the same as ZIP archive, which is ROM gba under any name.
 When loading a game, choose load of preservation, and not as a new game.
-5. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> - a reached to save room in the tent where he slept Pokemon, and game normally saved.
+5. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> : a reached to save room in the tent where he slept Pokemon, and game normally saved.
 Then he came out of the emulator and again went to the game, and the game is booted normally, like you have in the picture "Continue" (Resume your adventure from where you last saved.).
 the size of saving: 128 KB (131,072 bytes).
 Preserved under the name : "Pokemon Mystery Dungeon - Red Rescue Team.sav"
