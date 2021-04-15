@@ -92,7 +92,9 @@ If other games works using the ROM patching solution.
 30. <b><i>DragonBall Z Legacy of Goku 2</b></i> : Work fine, but sound issue
 31. <b><i>Metroid Zero Mission</b></i> : Work fine, sound issue A weird warping of the music that causes the audio to bob and weave, as well as a periodic, persistent ticking sound.
 32. <b><i>Mother 3</b></i> : Work unzip, .sav problem.
-33. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> : Work unzip, .sav problem.
+33. <b><i>Final Fantasy VI - Sound Restoration (E)</i></b> : bad jump 80080180 (30000620) and then crash.
+34. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> : Work unzip, .sav problem.
+
 <i>a real save, not a save state.
 the game is not able to load/create a save file, it says "the game cannot be saved"
 tempGBA can load/save just fine.</i>
