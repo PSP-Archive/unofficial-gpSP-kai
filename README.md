@@ -121,7 +121,7 @@ But still its not freezing or whatever I can still play some roms (blind selecti
 
 - <i>fix trick</i>
 
-![Game list](sr.gif)
+![Game list](image/sr.gif)
 
 <b>::Android/iOS/PC::
 PSP\memstick\PSP\SYSTEM\ppsspp.ini
