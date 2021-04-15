@@ -193,7 +193,7 @@ TempGBA is supposed to have better compatibility / less glitches for some games 
 
 As for the "GU" output, that's supposed to be accelerated video (=faster), whereas SW is software, which should probably be slower, although theoretically more accurate (less glitches). I use GU all the time though, and have yet to find a game that has any problem with it.
 
-## Changes Log
+## Change log
 
 -<b>Unofficial gpSP Kai 3.4 Test 4 Build 230</b>
         Fixed regression: Analog Nub mapping works separately from Dpad again.
