@@ -12,7 +12,7 @@ The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in 
 3. <b><i>Powder 117</b><i> and <i><b>Qwak</i></b> - failed to run.
 4. <b><i>Grand Theft Auto Advance</b></i> - has a bug that after starting dialogues game crashes.
 Save allows you to bypass the damaged portion in the dump of the Rom.
-   Use save or savestate – http://www.mediafire.com/download/7ts7jm7ihpl81v4/Grand+Theft+Auto+Advance+SAV.zip
+   [Use save or savestate](http://www.mediafire.com/download/7ts7jm7ihpl81v4/Grand+Theft+Auto+Advance+SAV.zip)
 Saving files expanded in GBA/SAV folder.
 The name of conservation should be exactly the same as ZIP archive, which is ROM gba under any name.
 When loading a game, choose load of preservation, and not as a new game.
@@ -24,7 +24,19 @@ Image
 UO gpSP kai ver 3.4 test 3 Build 92 also have same prob. Im trying using old version of gpsp ver: 3.2 user test 02 no prob at all. Hope you can fix this glitches.
 gpSP ver 3.2 user test 02.
 
-# Release log
+- RAM
+Other gpSP emulators seem to detect I have extra memory available though. I will use build 152 because I like the extra memory.
+
+- UO gpSP Kai v3.4 test 4 build 225 = 16mb MAX
+- UO gpSP Kai v3.5 Mod = 32mb MAX
+- UO gpSP Kai v3.4 test 3 build 152 = 32mb MAX
+
+
+32mb Max ROM Buff achieved when Unlock Extra Memory is enabled from Recovery Menu... If I disable Unlock Extra Memory, it is 16mb again but other gpSP emulators are still 32mb Max ROM Buff.
+32mb ROM / 32mb buff = Faster loading, less glitchy
+32mb ROM / 16mb Buff = Very slow loading, PSP freeze sometimes, unpacks and duplicates *.zip ROM to *.gba so uses more space. At least it does on a few other gpSP emulators.
+
+## Release log
 
 -<b>Unofficial gpSP Kai 3.4 Test 4 Build 230</b>
         Fixed regression: Analog Nub mapping works separately from Dpad again.
