@@ -597,8 +597,3 @@ takka
 takka@tfact.net
 blog http://takka.tfact.jp/blog/
 svn http://sourceforge.jp/projects/gpsp-kai
-
-Google Translate
-Original text
--- gameplaySP Gameboy Advance emulator for Playstation Portable --
-Contribute a better translation
