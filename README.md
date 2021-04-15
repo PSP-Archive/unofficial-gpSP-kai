@@ -15,6 +15,12 @@
 
 - <b>toBsucht</b> : for testing and helping translating.
 
+
+
+Latest source code by takka stopped development in 2009. Since then, I have not seen any significant improvements. Release from an unknown developer, version 3.5, is actually an old version - Version 3.3 test 2 Build 132 without any significant changes and improvements in functionality. So I decided to finalize this nice emulator for the stable release.
+
+A developer going by the name <b>"ErikPshat"</b> has taken it upon himself to rejuvenate a homebrew emulator called gpSP kai. Dubbed UO gpSP Kai, aka GameplaySP, is a Gameboy Advance emulator for the Playstation Portable. The developer has released his unofficial build which introduces some bug fixes, adds a few fixes such as running almost all games from ZIP archives. Below you can view his release notes for UO gpSP Kai version 3.4, Test 4 Build 225.
+
 ## Known issues (minor problems)
 
 - <u>Compatibility list</u>
