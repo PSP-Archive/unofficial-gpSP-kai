@@ -130,6 +130,50 @@ Generally I normally work all of these games.
 32mb ROM / 32mb buff = Faster loading, less glitchy
 32mb ROM / 16mb Buff = Very slow loading, PSP freeze sometimes, unpacks and duplicates *.zip ROM to *.gba so uses more space. At least it does on a few other gpSP emulators.
 
+## Creating & Adding Cheats [Uo gpSP kai]
+
+Requirements::
+
+- Action Replay or Gameshark Codes for a certain game
+- gpSP Kai Cheat Creator.exe Downlaod
+- Hacked PSP with the most recent gpSP Kai
+
+1) All gpSP Kai cheat codes should be inserted in ms0:/PSP/Game/gpSP Kai/GBA/CHT , assuming that gpSP Kai is any version of the Gameboy Advance Emulator. These cheat codes have a specific format, which is .cht .
+
+2) Gather the Action Reply/Gameshark codes that you want and open up the gpSP Kai Cheat Creator.exe program. Enter the game name at the top bar in the program (i.e. Pokemon Emerald). The game name will help you identify the cheat file.
+
+3) There is a specific form in which you need to enter these codes to get a .cht file.
+
+Action Replay Form :
+
+PAR_V3 (name of code) <---make sure PAR_V3 and the code name is separated by a space
+XXXXXXXX YYYYYYYY
+XXXXXXXX YYYYYYYY
+
+Enter the code as shown in the X and Y column above if it is an Action Reply Code. Remember that there are 8 characters in each column because it is an Action Replay Code. Column X is separated from Column Y with a space. If the code has more than two lines, do not get part of it and instead get the whole thing.
+
+Gameshark Form :
+
+gameshark_V3 (name of code) <-----again, gameshark_V3 is separated from the code name
+XXXXXXXXXXXX
+XXXXXXXXXXXX
+
+Enter the code as shown in the X rows. In gameshark form, there are not columns, but there are rows. Remember that there are 12 characters in each row because it is in gameshark form. After one row ends, another row starts. If the code has more than two lines, do not get part of it and instead get the whole thing.
+
+4) Enter the codes that you have gathered in the wide box area of the gpSP Kai cheat creator program after you put them in the gameshark/Action Replay form from above. After every code, make sure to not leave them attached to eachother, for this will mess up the code. Press the "enter" key to separate them.
+
+5) Create the .cht file after you enter all the codes.
+
+6) Connect your PSP to your computer using a USB Cord. Go to this directory: ms0:/PSP/GAME/gpSP Kai/GBA/CHT . This directory may not be the same as others, and if that is the case, then just look for the CHT folder in your gpSP Kai.
+
+7) Insert your new .cht file into the CHT Folder
+
+8) Disconnect your PSP from the USB Cord and start up your gpSP Kai. After you start the game that you made the .cht file for, press the triangle button to open up the gpSP Kai menu. In that menu, you should see the words "Cheats and Miscellaneous Options". Click on those words to take you to the cheats part of the menu.
+
+9) Go to "Load Cheat File". Then, you will see the .cht file that you recently created. Click on that cheat file.
+
+10) Loading the certain .cht file will show you the cheats that are in that .cht file. You can disable/enable those cheats in the menu.
+
 ## Release log
 
 -<b>Unofficial gpSP Kai 3.4 Test 4 Build 230</b>
