@@ -54,7 +54,8 @@ In the folder : UO gpSP kai/GBA/SAV
 
 2485 - Pokemon Mystery Dungeon - Red Rescue Team (U)(RDG).gba        = POKE DUNGEON B24E 01 0 = Save completed!
 
-8. <b><i>Advance War 2</b></i> : Popup on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.both keeps glitching, sometimes all the sprites just vanish, the text too
+8. <b><i>Advance War 2</b></i> : Popup on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.both keeps glitching, sometimes all the sprites just vanish, the text too.
+
 See the different :
 
 ![Game list](image/gpsp.jpg)
@@ -94,7 +95,7 @@ If other games works using the ROM patching solution.
 32. <b><i>Mother 3</b></i> : Work unzip, .sav problem.
 33. <b><i>Final Fantasy VI - Sound Restoration (E)</i></b> : bad jump 80080180 (30000620) and then crash.
 34. <b><i>Classic NES Series</i></b> : I keep loading the game to be presented with a screen stating "Save State X / O" but regardless of what I do, it moves to a black screen with "bad jump 600080 (3007484)". I tried both X, O and Home to see if I could do a Save State from the Emulator Menu but all of it results in this screen the moment I press any of the 3 buttons.
-34. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> : Work unzip, .sav problem.
+35. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> : Work unzip, .sav problem.
 
 <i>a real save, not a save state.
 the game is not able to load/create a save file, it says "the game cannot be saved"
