@@ -47,8 +47,8 @@ See the different:
 
 ![Game list](image/gpsp.jpg)
 
-UO gpSP kai ver 3.4 test 3 Build 92 also have same prob. Im trying using old version of gpsp ver: 3.2 user test 02 no prob at all. Hope you can fix this glitches.
-gpSP ver 3.2 user test 02.
+UO gpSP kai 3.4 test 3 Build 92 also have same prob.old version of gpSP 3.2 user test 02 no problems at all. Hope can fix this glitches.
+gpSP 3.2 test 02.
 
 9. <b><i>Megaman Battle Network 1</b></i> : End of the game when entering underground railroad.
 
@@ -64,7 +64,7 @@ If other games works using the ROM patching solution.
 
 14. <b><i>Sims 2 Pets</b></i> : Graphically Glitched, but not unplayable.
 15. <b><i>Banjo Kazooie Grunty's Revenge</b></i> : Crashes to bios in the very beggining.
-16. <b><i>DragonBall Legacy of Goku</b></i> : Freezes after hack announce.
+16. <b><i>DragonBall Z Legacy of Goku</b></i> : Freezes after hack announce.
 17. <b><i>DemiKids Light Version</b></i> : Crashes before begin a game.
 18. <b><i>Digimon Racing</b></i> : Freezes on beggining.
 19. <b><i>Doom 2</b></i> : Bad scaling, freezes on beggining.
@@ -78,8 +78,10 @@ If other games works using the ROM patching solution.
 27. <b><i>Steel Empire</b></i> : Black Screen at start.
 28. <b><i>Super Monkey Ball Jr.</b></i> : Game crashes, was working on version 1.0.4.
 29. <b><i>Street Racing Syndicate</b></i> : Crashing when choosing language.
+30. <b><i>DragonBall Z Legacy of Goku 2 : Work fine, but sound issue
+31. <b><i>Metroid Zero Mission<b><i> : Work fine, sound issue A weird warping of the music that causes the audio to bob and weave, as well as a periodic, persistent ticking sound.
 
-**Note : Other games are working.**
+**Note : Other games are working great.**
 
 -<b>RAM</b>
 
