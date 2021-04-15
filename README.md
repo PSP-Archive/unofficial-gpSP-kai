@@ -140,7 +140,7 @@ Generally I normally work all of these games.
 <u><b>::Requirements::</b></u>
 
 - Action Replay or Gameshark Codes for a certain game
-- gpSP Kai Cheat Creator.exe Downlaod
+- gpSP Kai Cheat Creator.exe [Downlaod](https://github.com/PSP-Archive/emulator-cheats/releases/tag/0.2)
 - Hacked PSP with the most recent gpSP Kai
 
 1) All gpSP Kai cheat codes should be inserted in ms0:/PSP/Game/gpSP Kai/GBA/CHT , assuming that gpSP Kai is any version of the Gameboy Advance Emulator. These cheat codes have a specific format, which is .cht .
