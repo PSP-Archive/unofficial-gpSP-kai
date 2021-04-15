@@ -37,7 +37,7 @@ The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in 
 Save allows you to bypass the damaged portion in the dump of the Rom.
 
    [GTA Advance .SAV file](http://www.mediafire.com/file/7ts7jm7ihpl81v4/Grand_Theft_Auto_Advance_SAV.zip/file)
-Saving files expanded in GBA/SAV folder.
+expanded in GBA/SAV folder.
 The name of conservation should be exactly the same as ZIP archive, which is ROM gba under any name.
 When loading a game, choose load of preservation, and not as a new game.
 5. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> - a reached to save room in the tent where he slept Pokemon, and game normally saved.
@@ -102,6 +102,7 @@ place a .SAV in your rom directory.
 
 1.gpSP
 ![Game list](image/gpspkai.png)
+
 2.TempGBA
 ![Game list](image/tempgba.png)
 
