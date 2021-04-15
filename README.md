@@ -17,8 +17,7 @@ Save allows you to bypass the damaged portion in the dump of the Rom.
 Saving files expanded in GBA/SAV folder.
 The name of conservation should be exactly the same as ZIP archive, which is ROM gba under any name.
 When loading a game, choose load of preservation, and not as a new game.
-5. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i>
-oddly enough, reached to save room in the tent where he slept Pokemon, and game normally saved.
+5. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> - a reached to save room in the tent where he slept Pokemon, and game normally saved.
 Then he came out of the emulator and again went to the game, and the game is booted normally, like you have in the picture "Continue" (Resume your adventure from where you last saved.).
 the size of saving: 128 KB (131,072 bytes).
 Preserved under the name: "Pokemon Mystery Dungeon - Red Rescue Team.sav"
@@ -659,6 +658,12 @@ Images should be expanded in the folder: "UO gрSP kai \ GBA \ ROM".
 
 	The set sound buffer size is now saved in the gpSP CFG file.
 		gpSP CFG file size changed to 56byte-> 72byte.
+
+## Credits
+
+<b>Exophase</b> : main developer - Official release "gpSP" latest 0.91.
+<b>takka</b> : developer - UnOfficial release "UO gpSP kai" latest 3.4 test 3 build 92.
+<b>toBsucht</b> : for testing and helping translating
 
 takka
 takka@tfact.net
