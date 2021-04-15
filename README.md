@@ -48,8 +48,7 @@ See the different:
 
 ![Game list](image/gpsp.jpg)
 
-UO gpSP kai 3.4 test 3 Build 92 also have same prob.old version of gpSP 3.2 user test 02 no problems at all. Hope can fix this glitches.
-gpSP 3.2 test 02.
+UO gpSP kai 3.4 test 3 Build 92 also have same problem.old version of gpSP 3.2 user test 02 no problems at all.
 
 9. <b><i>Megaman Battle Network 1</b></i> : End of the game when entering underground railroad.
 
