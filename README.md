@@ -93,6 +93,7 @@ If other games works using the ROM patching solution.
 31. <b><i>Metroid Zero Mission</b></i> : Work fine, sound issue A weird warping of the music that causes the audio to bob and weave, as well as a periodic, persistent ticking sound.
 32. <b><i>Mother 3</b></i> : Work unzip, .sav problem.
 33. <b><i>Final Fantasy VI - Sound Restoration (E)</i></b> : bad jump 80080180 (30000620) and then crash.
+34. <b><i>Classic NES Series</i></b> : I keep loading the game to be presented with a screen stating "Save State X / O" but regardless of what I do, it moves to a black screen with "bad jump 600080 (3007484)". I tried both X, O and Home to see if I could do a Save State from the Emulator Menu but all of it results in this screen the moment I press any of the 3 buttons.
 34. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> : Work unzip, .sav problem.
 
 <i>a real save, not a save state.
