@@ -119,14 +119,14 @@ place a .SAV in your rom directory.
 It only shows blue screen but I can still see the gui in split second if I revert to full screen/windowed vise versa and it quickly returns to blue.
 But still its not freezing or whatever I can still play some roms (blind selection) but another problem is that it only shows black screen on every start and I need to revert to windowed/full screen vise versa so that the gameplay will display.
 
--<i>fix trick</i>
+- <i>fix trick</i>
 
 ![Game list](sr.gif)
 
-<b>Android.
+<b>::Android/iOS/PC::
 PSP\memstick\PSP\SYSTEM\ppsspp.ini
-make:
-SoftwareRenderer = True</b>
+
+make : SoftwareRenderer = True</b>
 
 ## <h3>RAM</h3>
 
