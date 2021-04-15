@@ -124,6 +124,7 @@ But still its not freezing or whatever I can still play some roms (blind selecti
 ![Game list](image/sr.gif)
 
 <b>::Android/iOS/PC::
+	
 PSP\memstick\PSP\SYSTEM\ppsspp.ini
 
 make : SoftwareRenderer = True</b>
