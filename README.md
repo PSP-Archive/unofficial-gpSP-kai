@@ -62,6 +62,25 @@ gpSP ver 3.2 user test 02.
 Patching GBA ROMs.
 If other games works using the ROM patching solution.
 
+14. <b><i>Sims 2 Pets</b></i> : Graphically Glitched, but not unplayable.
+15. <b><i>Banjo Kazooie Grunty's Revenge</b></i> : Crashes to bios in the very beggining.
+16. <b><i>DragonBall Legacy of Goku</b></i> : Freezes after hack announce.
+17. <b><i>DemiKids Light Version</b></i> : Crashes before begin a game.
+18. <b><i>Digimon Racing</b></i> : Freezes on beggining.
+19. <b><i>Doom 2</b></i> : Bad scaling, freezes on beggining.
+20. <b><i>Harry Potter Quidditch World Cup</b></i> : Minor Graphical Glitches, and freezes before entering games.
+21. <b><i>Harry Potter and The Order of Phoenix</b></i> : Constantly coming back to Langauge selection screen.
+22. <b><i>Mario Tennis Power Tour</b></i> : Crashes to BIOS.
+23. <b><i>MegaMan Zero</b></i> : Heavy Graphical Glitches.
+24. <b><i>NBA Jam 2002</b></i> : Blank Screen on start.
+25. <b><i>Pokemon Pinball Ruby and Sapphire</b></i> : White Screen on start.
+26. <b><i>Rayman Raving Rabbids</b></i> : Heavy Graphical Glitches.
+27. <b><i>Steel Empire</b></i> : Black Screen at start.
+28. <b><i>Super Monkey Ball Jr.</b></i> : Game crashes, was working on version 1.0.4.
+29. <b><i>Street Racing Syndicate</b></i> : Crashing when choosing language.
+
+**Note : Other games are working.**
+
 -<b>RAM</b>
 
 Other gpSP emulators seem to detect I have extra memory available though. I will use build 152 because I like the extra memory.
