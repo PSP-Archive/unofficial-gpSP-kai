@@ -137,6 +137,8 @@ Generally I normally work all of these games.
 
 ## Creating & Adding Cheats
 
+[Uo gpSP kai Cheats](https://github.com/PSP-Archive/emulator-cheats/releases/tag/0.2)
+
 <u><b>::Requirements::</b></u>
 
 - Action Replay or Gameshark Codes for a certain game
