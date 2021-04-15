@@ -10,7 +10,13 @@
 2. <b><i>Golden Sun series</i></b> - still unplayable.
 The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in which you have to fly to a different location. The problem is, whenever I try to do so the message 'the game will not run in this hardware' appears on the screen.
 3. <b><i>Powder 117</b><i> and <i><b>Qwak</i></b> - failed to run.
-4. <b><i>Advance War 2</b></i> and <b><i>Popup</i></b> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
+4. <b><i>Grand Theft Auto Advance</b></i> - has a bug that after starting dialogues game crashes.
+Save allows you to bypass the damaged portion in the dump of the Rom.
+   Use save or savestate – http://www.mediafire.com/download/7ts7jm7ihpl81v4/Grand+Theft+Auto+Advance+SAV.zip
+Saving files expanded in GBA/SAV folder.
+The name of conservation should be exactly the same as ZIP archive, which is ROM gba under any name.
+When loading a game, choose load of preservation, and not as a new game.
+6. <b><i>Advance War 2</b></i> and <b><i>Popup</i></b> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
 See the different:
 
 Image
