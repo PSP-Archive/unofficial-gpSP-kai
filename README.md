@@ -84,7 +84,7 @@ If other games works using the ROM patching solution.
 
 **Note : Other games are working great.**
 
--<b>RAM</b>
+-<h3>RAM</h3>
 
 Other gpSP emulators seem to detect I have extra memory available though. I will use build 152 because I like the extra memory.
 
