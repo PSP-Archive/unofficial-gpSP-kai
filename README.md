@@ -28,7 +28,9 @@ Image
 <code>(E)</code> version of Pokemon Mystery Dungeon has the save problem. <code>(U)</code>version works fine.
 
 2567 - Pokemon Mystery Dungeon - Red Rescue Team (E)(Rising Sun).gba = POKE DUNGEON B24P 01 0 = Save failed!
+
 2485 - Pokemon Mystery Dungeon - Red Rescue Team (U)(RDG).gba        = POKE DUNGEON B24E 01 0 = Save completed!
+
 6. <b><i>Advance War 2</b></i> and <b><i>Popup</i></b> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
 See the different:
 
