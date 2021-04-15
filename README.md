@@ -15,9 +15,9 @@
 
 ## Known issues (minor problems)
 
-- Compatibility list
+- <u>Compatibility list</u>
 
-**-Note : Some games workarounds trick, 32mb Rom only work unzip.**
+**- Note : Some games workarounds trick, 32mb Rom only work unzip.**
 
 1. <b><i>Sigma Star Saga</i></b> : still unable to show health bar.
 
@@ -109,7 +109,7 @@ place a .SAV in your rom directory.
 
 **Note : Other games are working great.**
 
-## <u><h3>RAM</h3></u>
+## <h3>RAM</h3>
 
 ![Game list](image/32mb.gif)
 
@@ -154,7 +154,7 @@ XXXXXXXX YYYYYYYY
 
 Enter the code as shown in the X and Y column above if it is an Action Reply Code. Remember that there are 8 characters in each column because it is an Action Replay Code. Column X is separated from Column Y with a space. If the code has more than two lines, do not get part of it and instead get the whole thing.
 
-u>Gameshark Form :</u>
+<u>Gameshark Form :</u>
 
 gameshark_V3 (name of code) <-----again, gameshark_V3 is separated from the code name
 XXXXXXXXXXXX
