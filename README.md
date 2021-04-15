@@ -80,25 +80,8 @@ If other games works using the ROM patching solution.
 29. <b><i>Street Racing Syndicate</b></i> : Crashing when choosing language.
 30. <b><i>DragonBall Z Legacy of Goku 2</b></i> : Work fine, but sound issue
 31. <b><i>Metroid Zero Mission</b></i> : Work fine, sound issue A weird warping of the music that causes the audio to bob and weave, as well as a periodic, persistent ticking sound.
-
-**Note : Other games are working great.**
-
--<h3>RAM</h3>
-
-
-
-![Game list](image/32mb.gif)
-
-1. Bleach Advance                             - 32.0 MB
-2. Kingdom Hearts - Chain of Memories         - 32.0 MB
-3. Mother 3                                   - 32.0 MB
-4. Riviera - The Promised Land                - 32.0 MB
-5. Pokemon Mystery Dungeon - Red Rescue Team  - 32.0 MB
-
-Simply, if a large 32MB game in a ZIP-archive then it will be a long time in the TEMP unpacked, you just need to wait a minute, there is a diode will blink rapidly.
-If you do not want to wait, and to play immediately loaded, then unzip and run *.gba.
-Generally I normally work all of these games.
-
+32. <b><i>Mother 3</b></i> : Work unzip, .sav problem.
+33. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> : Work unzip, .sav problem.
 <i>a real save, not a save state.
 the game is not able to load/create a save file, it says "the game cannot be saved"
 tempGBA can load/save just fine.</i>
@@ -112,6 +95,22 @@ place a .SAV in your rom directory
 ![Game list](image/tempgba.png)
 
 **Note : 32mb Save working on TempGBA. and gpSP it is still unsupported 32mb save data.**
+
+**Note : Other games are working great.**
+
+-<h3>RAM</h3>
+
+![Game list](image/32mb.gif)
+
+1. Bleach Advance                             - 32.0 MB
+2. Kingdom Hearts - Chain of Memories         - 32.0 MB
+3. Mother 3                                   - 32.0 MB
+4. Riviera - The Promised Land                - 32.0 MB
+5. Pokemon Mystery Dungeon - Red Rescue Team  - 32.0 MB
+
+Simply, if a large 32MB game in a ZIP-archive then it will be a long time in the TEMP unpacked, you just need to wait a minute, there is a diode will blink rapidly.
+If you do not want to wait, and to play immediately loaded, then unzip and run *.gba.
+Generally I normally work all of these games.
 
 - UO gpSP Kai 3.4 test 4 build 225 = 16mb Max
 - UO gpSP Kai 3.5 Mod = 32mb Max
