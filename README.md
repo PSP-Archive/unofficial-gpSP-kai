@@ -3,6 +3,20 @@
 <b><i>Unofficial gpSP kai crated by Takka.</b>
 -gameplaySP Gameboy Advance emulator for Playstation Portable.</I>
 
+
+## Known issues (minor problems)
+
+1. <i>Sigma Star Saga</i> still unable to show health bar.
+2. <i>Golden Sun series</i>, still unplayable.
+The game is 'DragonBall Z Legacy of Goku 2'. There is a sequence in the game in which you have to fly to a different location. The problem is, whenever I try to do so the message 'the game will not run in this hardware' appears on the screen.
+3. <i>Advance War 2</i> and <i>Popup</i> on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.
+See the different:
+
+Image
+
+UO gpSP kai ver 3.4 test 3 Build 92 also have same prob. Im trying using old version of gpsp ver: 3.2 user test 02 no prob at all. Hope you can fix this glitches.
+gpSP ver 3.2 user test 02.
+
 # Release log
 
 -<b>Unofficial gpSP Kai 3.4 Test 4 Build 230</b>
