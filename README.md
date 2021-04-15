@@ -101,9 +101,11 @@ in game
 place a .SAV in your rom directory.
 
 1.gpSP
+
 ![Game list](image/gpspkai.png)
 
 2.TempGBA
+
 ![Game list](image/tempgba.png)
 
 **Note : 32mb Save working on TempGBA. and gpSP it is still unsupported 32mb save data.**
