@@ -24,7 +24,8 @@ Image
 UO gpSP kai ver 3.4 test 3 Build 92 also have same prob. Im trying using old version of gpsp ver: 3.2 user test 02 no prob at all. Hope you can fix this glitches.
 gpSP ver 3.2 user test 02.
 
-- RAM
+-RAM
+
 Other gpSP emulators seem to detect I have extra memory available though. I will use build 152 because I like the extra memory.
 
 - UO gpSP Kai v3.4 test 4 build 225 = 16mb MAX
