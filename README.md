@@ -716,8 +716,8 @@ svn http://sourceforge.jp/projects/gpsp-kai
 
 ## Credits
 
-<b>Exophase</b> : main developer - Official release "gpSP" latest 0.91.
+<b>Exophase</b> : main developer - Official release <b><i>"gpSP"</b></i> 0.91. latest
 
-<b>takka</b> : developer - UnOfficial release "UO gpSP kai" latest 3.4 test 3 build 92.
+<b>takka</b> : developer - UnOfficial release <b><i>"UO gpSP kai"</b></i> 3.4 test 3 build 92. latest
 
 <b>toBsucht</b> : for testing and helping translating.
