@@ -71,7 +71,7 @@ See the different :
 
 ![Game list](image/gpsp.jpg)
 
-UO gpSP kai 3.4 test 3 Build 92 also have same problem.old version of gpSP 3.2 user test 02 no problems at all.
+UO gpSP kai 3.4 test 4 build 230 also have same problem.old version of gpSP 3.2 user test 02 no problems at all.
 
 
 ---<b>Setting Working Advance War 2</b>---
