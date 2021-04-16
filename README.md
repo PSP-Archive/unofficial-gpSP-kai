@@ -17,14 +17,14 @@
 
 ## Rewiew
 
-Latest source code by takka stopped development in 2009. Since then, I have not seen any significant improvements. Release from an unknown developer, version 3.5, is actually an old version - Version 3.3 test 2 Build 132 without any significant changes and improvements in functionality. So I decided to finalize this nice emulator for the stable release.
+Latest source code by takka stopped development in 2009. Since then, I have not seen any significant improvements. Release from an unknown developer, version 3.5, is actually an old version - version 3.3 test 2 build 132 without any significant changes and improvements in functionality. So I decided to finalize this nice emulator for the stable release.
 
-A developer going by the name <b>"ErikPshat"</b> has taken it upon himself to rejuvenate a homebrew emulator called gpSP kai. Dubbed UO gpSP Kai, aka GameplaySP, is a Gameboy Advance emulator for the Playstation Portable. The developer has released his unofficial build which introduces some bug fixes, adds a few fixes such as running almost all games from ZIP archives. Below you can view his release notes for UO gpSP Kai version 3.4, Test 4 Build 230.
+A developer going by the name <b>"ErikPshat"</b> has taken it upon himself to rejuvenate a homebrew emulator called gpSP kai. Dubbed UO gpSP Kai, aka GameplaySP, is a Gameboy Advance emulator for the Playstation Portable. The developer has released his unofficial build which introduces some bug fixes, adds a few fixes such as running almost all games from ZIP archives. Below you can view his release notes for UO gpSP Kai version 3.4 test 4 build 230.
 
 ## Known issues (minor problems)
 
 + <i>Good compatibility</i>
-+ <i>128k saves are not supported for Uo gpSP kai/gpSP - (Ex. Pokemon Mistery Dungeon) :: use <b>TempGBA</b></i>
++ <i>128k saves are not supported for Uo gpSP kai/gpSP - (Ex. Pokemon Mistery Dungeon) :: use <b>TempGBA/TempGBA-mod</b></i>
 + <i>Required - <b>gba_bios.bin</b></i>
 
 
