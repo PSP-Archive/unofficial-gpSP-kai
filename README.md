@@ -62,9 +62,7 @@ In the folder : UO gpSP kai/GBA/SAV
 
 <code>(E)</code> version of Pokemon Mystery Dungeon has the save problem. <code>(U)</code>version works fine.
 
-2567 - Pokemon Mystery Dungeon - Red Rescue Team (E)(Rising Sun).gba = POKE DUNGEON B24P 01 0 = Save failed!
-
-2485 - Pokemon Mystery Dungeon - Red Rescue Team (U)(RDG).gba        = POKE DUNGEON B24E 01 0 = Save completed!
+![Game list](image/j.jpg)
 
 8. <b><i>Advance War 2</b></i> : Popup on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.both keeps glitching, sometimes all the sprites just vanish, the text too.In some tutorials/battles where a character would normally be talking, the dialogue box would be invisible.
 
