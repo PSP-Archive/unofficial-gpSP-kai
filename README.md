@@ -30,6 +30,7 @@ A developer going by the name <b>"ErikPshat"</b> has taken it upon himself to re
 
 - <ins><u>Compatibility list</u></ins>
 ![Game list](image/f.jpg)
+<ins>**Note : Other Games Tested Soon**</ins>
 
 1. <b><i>Sigma Star Saga</i></b> : still unable to show health bar.
 
