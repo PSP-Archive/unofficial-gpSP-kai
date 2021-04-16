@@ -62,7 +62,7 @@ In the folder : UO gpSP kai/GBA/SAV
 
 <code>(E)</code> version of Pokemon Mystery Dungeon has the save problem. <code>(U)</code>version works fine.
 
-![Game list](image/j.jpg)
+![Game list](image/Screenshot_2021-04-16-13-37-08-16.jpg)
 
 8. <b><i>Advance War 2</b></i> : Popup on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.both keeps glitching, sometimes all the sprites just vanish, the text too.In some tutorials/battles where a character would normally be talking, the dialogue box would be invisible.
 
