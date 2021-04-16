@@ -1,6 +1,6 @@
 ![Game list](image/up_gbsp_kai_logo01_trim.png)
 
-<b><i>Unofficial gpSP kai crated by Takka</b>
+<b><i>Unofficial gpSP kai created by Takka</b>
 -gameplaySP Gameboy Advance emulator for Playstation Portable</I>
 
 ![Game list](image/background.png)
