@@ -24,8 +24,8 @@ A developer going by the name <b>"ErikPshat"</b> has taken it upon himself to re
 ## Known issues (minor problems)
 
 + <i>Good compatibility</i>
-+ <i>128k saves are not supported (Ex. Pokemon Mistery Dungeon) - use <b>TempGBA</b></i>
-+ <i>Need the <b>gba_bios.bin</b></i>
++ <i>128k saves are not supported for Uo gpSP kai/gpSP - (Ex. Pokemon Mistery Dungeon) :: use <b>TempGBA</b></i>
++ <i>Required - <b>gba_bios.bin</b></i>
 
 
 **- Note : Some games workarounds trick, 32mb Rom only works unzip.**
@@ -67,13 +67,45 @@ In the folder : UO gpSP kai/GBA/SAV
 
 2485 - Pokemon Mystery Dungeon - Red Rescue Team (U)(RDG).gba        = POKE DUNGEON B24E 01 0 = Save completed!
 
-8. <b><i>Advance War 2</b></i> : Popup on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.both keeps glitching, sometimes all the sprites just vanish, the text too.
+8. <b><i>Advance War 2</b></i> : Popup on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.both keeps glitching, sometimes all the sprites just vanish, the text too.In some tutorials/battles where a character would normally be talking, the dialogue box would be invisible.
 
 See the different :
 
 ![Game list](image/gpsp.jpg)
 
 UO gpSP kai 3.4 test 3 Build 92 also have same problem.old version of gpSP 3.2 user test 02 no problems at all.
+
+
+---<b>Setting Working Advance War 2</b>---
+
+::: Uo gpSP kai 3.4 test 4 build 230 :::
+
+<b>:Use Settings are:</b>
+
+-GFX Filtering : yes
+
+-Frameskip type : auto
+
+-Frameskip value : 9
+
+-Frameskip variation : uniform
+
+-Audio emulation : yes (dunno if this matters but imma put it on anyway)
+
+-Audio buffer size : 4096 bytes
+
+-Clock speed : 300MHz
+
+-Update backup : auto
+
+-Enable home : no
+
+-Debug mode : yes (What does this do?)
+
+-Fake fatv : yes (My Pokemon hacks crash the emu without it)
+
+-Boot mode : game cart
+
 
 9. <b><i>Megaman Battle Network 1</b></i> : End of the game when entering underground railroad.
 
