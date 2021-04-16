@@ -29,7 +29,7 @@ A developer going by the name <b>"ErikPshat"</b> has taken it upon himself to re
 **- Note : Some games workarounds trick, 32mb Rom only works unzip.**
 
 - <ins><u>Compatibility list</u></ins>
-![Game list](f.jpg)
+![Game list](image/f.jpg)
 
 1. <b><i>Sigma Star Saga</i></b> : still unable to show health bar.
 
