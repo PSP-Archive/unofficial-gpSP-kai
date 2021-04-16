@@ -136,7 +136,7 @@ If other games works using the ROM patching solution.
 29. <b><i>Street Racing Syndicate</b></i> : Crashing when choosing language.
 30. <b><i>DragonBall Z Legacy of Goku 2</b></i> : Work fine, but sound issue
 31. <b><i>Metroid Zero Mission</b></i> : Work fine, sound issue A weird warping of the music that causes the audio to bob and weave, as well as a periodic, persistent ticking sound.
-32. <b><i>Mother 3</b></i> : Work unzip, .sav problem.
+32. <b><i>Mother 3</b></i> : Work unzip, .sav file problem.
 33. <b><i>Final Fantasy VI - Sound Restoration (E)</i></b> : bad jump 80080180 (30000620) and then crash.
 34. <b><i>Classic NES Series</i></b> : I keep loading the game to be presented with a screen stating "Save State X / O" but regardless of what I do, it moves to a black screen with "bad jump 600080 (3007484)". I tried both X, O and Home to see if I could do a Save State from the Emulator Menu but all of it results in this screen the moment I press any of the 3 buttons.
 35. <b><i>Pokemon Mystery Dungeon - Red Rescue Team</b></i> : Work unzip, .sav problem.
@@ -148,15 +148,15 @@ tempGBA can load/save just fine.</i>
 in game
 place a .SAV in your rom directory.
 
-1.gpSP
+1.<ins>gpSP</ins>
 
 ![Game list](image/gpspkai.png)
 
-2.TempGBA
+2.<ins>TempGBA</ins>
 
 ![Game list](image/tempgba.png)
 
-**Note : 32mb(128k) Save support on TempGBA and gpSP it is still unsupported 32mb save data.**
+**Note : 32mb (128k - .sav file making a some games) Save supported on TempGBA and gpSP it is still unsupported 32mb save data.**
 
 **Note : Other games are working great.**
 
