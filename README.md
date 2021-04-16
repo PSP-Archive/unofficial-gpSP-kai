@@ -67,14 +67,14 @@ In the folder : UO gpSP kai/GBA/SAV
 
 8. <b><i>Advance War 2</b></i> : Popup on the top always didn't show up. Popup on the bottom works like normal, only the top have a problem.both keeps glitching, sometimes all the sprites just vanish, the text too.In some tutorials/battles where a character would normally be talking, the dialogue box would be invisible.
 
-See the different :
+<ins>See the different :</ins>
 
 ![Game list](image/gpsp.jpg)
 
-UO gpSP kai 3.4 test 4 build 230 also have same problem.old version of gpSP 3.2 user test 02 no problems at all.
+UO gpSP kai 3.4 test 4 build 230 also have same problem. old version of gpSP 3.2 user test 02 no problems at all.
 
 
----<b>Setting Working Advance War 2</b>---
+---<ins><b>Setting Working Advance War 2</ins></b>---
 
 ::: Uo gpSP kai 3.4 test 4 build 230 :::
 
@@ -100,7 +100,7 @@ UO gpSP kai 3.4 test 4 build 230 also have same problem.old version of gpSP 3.2 
 
 -Debug mode : yes (What does this do?)
 
--Fake fatv : yes (My Pokemon hacks crash the emu without it)
+-Fake fatv : yes (Pokemon hacks crash the emu without it)
 
 -Boot mode : game cart
 
@@ -115,6 +115,7 @@ UO gpSP kai 3.4 test 4 build 230 also have same problem.old version of gpSP 3.2 
 
 13. <b><i>Mario Advanced 4</b></i> : (And probably many other games)
 Patching GBA ROMs.
+
 If other games works using the ROM patching solution.
 
 14. <b><i>Sims 2 Pets</b></i> : Graphically Glitched, but not unplayable.
@@ -155,7 +156,7 @@ place a .SAV in your rom directory.
 
 ![Game list](image/tempgba.png)
 
-**Note : 32mb Save working on TempGBA. and gpSP it is still unsupported 32mb save data.**
+**Note : 32mb(128k) Save support on TempGBA and gpSP it is still unsupported 32mb save data.**
 
 **Note : Other games are working great.**
 
@@ -170,7 +171,7 @@ But still its not freezing or whatever I can still play some roms (blind selecti
 
 ![Game list](image/sr.gif)
 
-<b>::Android/iOS/PC::
+<b><ins>::Android/iOS/PC::</ins>
 	
 PSP\memstick\PSP\SYSTEM\ppsspp.ini
 
@@ -180,13 +181,13 @@ make : SoftwareRenderer = True</b>
 
 ![Game list](image/32mb.gif)
 
-1. Bleach Advance                             : 32MB
-2. Kingdom Hearts - Chain of Memories         : 32MB
-3. Mother 3                                   : 32MB
-4. Riviera - The Promised Land                : 32MB
-5. Pokemon Mystery Dungeon - Red Rescue Team  : 32MB
+1. Bleach Advance                             : 32mb
+2. Kingdom Hearts - Chain of Memories         : 32mb
+3. Mother 3                                   : 32mb
+4. Riviera - The Promised Land                : 32mb
+5. Pokemon Mystery Dungeon - Red Rescue Team  : 32mb
 
-Simply, if a large 32MB game in a ZIP-archive then it will be a long time in the TEMP unpacked, you just need to wait a minute, there is a diode will blink rapidly.
+Simply, if a large 32mb game in a ZIP-archive then it will be a long time in the TEMP unpacked, you just need to wait a minute, there is a diode will blink rapidly.
 If you do not want to wait, and to play immediately loaded, then unzip and run *.gba.
 Generally I normally work all of these games.
 
@@ -215,7 +216,7 @@ Generally I normally work all of these games.
 
 3) There is a specific form in which you need to enter these codes to get a .cht file.
 
-<u>Action Replay Form :</u>
+<ins>Action Replay Form :</ins>
 
 PAR_V3 (name of code) <---make sure PAR_V3 and the code name is separated by a space
 XXXXXXXX YYYYYYYY
@@ -223,7 +224,7 @@ XXXXXXXX YYYYYYYY
 
 Enter the code as shown in the X and Y column above if it is an Action Reply Code. Remember that there are 8 characters in each column because it is an Action Replay Code. Column X is separated from Column Y with a space. If the code has more than two lines, do not get part of it and instead get the whole thing.
 
-<u>Gameshark Form :</u>
+<ins>Gameshark Form :</ins>
 
 gameshark_V3 (name of code) <-----again, gameshark_V3 is separated from the code name
 XXXXXXXXXXXX
@@ -247,7 +248,7 @@ Enter the code as shown in the X rows. In gameshark form, there are not columns,
 
 ## Comparison
 
-<b><i>TempGBA-mod vs Uo gpSP kai</b></i>
+<b><i><ins>TempGBA-mod vs Uo gpSP kai</b></i></ins>
 
 TempGBA-mod, I was wondering which emulator is better, im saying this because the video quality in tempGBA's "150% SW" mode, make the video output look much cleaner, dunno what exactly is the difference between it and "GU" (which looks a lot like the video output gpSP has) but just looks better.
 i also noticed that pokemon fire red and ultra violet dont tell me that the 1m chip isnt there, does tempGBA support 1m saves while gpSP doesn't?
