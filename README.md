@@ -23,9 +23,14 @@ A developer going by the name <b>"ErikPshat"</b> has taken it upon himself to re
 
 ## Known issues (minor problems)
 
-- <u>Compatibility list</u>
++ <i>Good compatibility</i>
++ <i>128k saves are not supported (Ex. Pokemon Mistery Dungeon) - use <b>TempGBA</b></i>
++ <i>Need the <b>gba_bios.bin</b></i>
+
 
 **- Note : Some games workarounds trick, 32mb Rom only works unzip.**
+
+- <u>Compatibility list</u>
 
 1. <b><i>Sigma Star Saga</i></b> : still unable to show health bar.
 
