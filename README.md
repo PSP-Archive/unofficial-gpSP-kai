@@ -166,7 +166,7 @@ place a .SAV in your rom directory.
 It only shows blue screen but I can still see the gui in split second if I revert to full screen/windowed vise versa and it quickly returns to blue.
 But still its not freezing or whatever I can still play some roms (blind selection) but another problem is that it only shows black screen on every start and I need to revert to windowed/full screen vise versa so that the gameplay will display.
 
-- <i>fix trick</i>
+- <b><ins><i>fix trick</i></b></ins>
 
 ![Game list](image/sr.gif)
 
